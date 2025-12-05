@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;1,6..12,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Natural Ayurvedic Green Palette */
+    --background: 45 30% 98%;
+    --foreground: 150 25% 15%;
+
+    --card: 45 35% 97%;
+    --card-foreground: 150 25% 15%;
+
+    --popover: 45 35% 97%;
+    --popover-foreground: 150 25% 15%;
+
+    /* Deep forest green */
+    --primary: 152 45% 28%;
+    --primary-foreground: 45 35% 97%;
+
+    /* Warm cream */
+    --secondary: 38 45% 92%;
+    --secondary-foreground: 150 25% 20%;
+
+    /* Soft sage */
+    --muted: 150 15% 92%;
+    --muted-foreground: 150 15% 40%;
+
+    /* Golden accent */
+    --accent: 38 65% 55%;
+    --accent-foreground: 150 25% 15%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 15% 85%;
+    --input: 150 15% 85%;
+    --ring: 152 45% 28%;
+
+    --radius: 0.75rem;
+
+    /* Custom Ayurveda tokens */
+    --sage: 145 25% 65%;
+    --sage-light: 145 30% 90%;
+    --forest: 152 45% 22%;
+    --gold: 38 75% 50%;
+    --gold-light: 38 80% 70%;
+    --cream: 45 50% 96%;
+    --terracotta: 18 55% 55%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(152 45% 28% / 0.9), hsl(145 25% 35% / 0.85));
+    --gradient-card: linear-gradient(180deg, hsl(45 35% 97%), hsl(45 30% 94%));
+    --gradient-gold: linear-gradient(135deg, hsl(38 75% 50%), hsl(38 65% 60%));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(150 25% 15% / 0.08);
+    --shadow-elevated: 0 12px 40px -8px hsl(150 25% 15% / 0.12);
+    --shadow-gold: 0 8px 30px -4px hsl(38 75% 50% / 0.25);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 150 25% 8%;
+    --foreground: 45 30% 95%;
+
+    --card: 150 20% 12%;
+    --card-foreground: 45 30% 95%;
+
+    --popover: 150 20% 12%;
+    --popover-foreground: 45 30% 95%;
+
+    --primary: 145 40% 50%;
+    --primary-foreground: 150 25% 8%;
+
+    --secondary: 150 15% 18%;
+    --secondary-foreground: 45 30% 95%;
+
+    --muted: 150 15% 18%;
+    --muted-foreground: 145 15% 60%;
+
+    --accent: 38 60% 50%;
+    --accent-foreground: 150 25% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 15% 20%;
+    --input: 150 15% 20%;
+    --ring: 145 40% 50%;
+
+    --sage: 145 20% 40%;
+    --sage-light: 145 15% 25%;
+    --forest: 152 35% 15%;
+    --gold: 38 70% 45%;
+    --gold-light: 38 50% 35%;
+    --cream: 45 20% 12%;
+    --terracotta: 18 45% 45%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+
+  .container-width {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--gold-light)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-hover {
+    @apply transition-all duration-500 ease-out;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .image-overlay {
+    @apply relative overflow-hidden;
+  }
+
+  .image-overlay::after {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-t from-foreground/60 via-foreground/20 to-transparent;
+  }
+
+  .decorative-line {
+    @apply w-20 h-0.5 bg-gradient-to-r from-primary via-accent to-primary;
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
+}
+
