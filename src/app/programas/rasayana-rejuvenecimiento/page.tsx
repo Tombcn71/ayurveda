@@ -87,14 +87,14 @@ export default function RasayanaRejuvenecimientoPage() {
               className="object-cover brightness-50"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-purple-900/60 via-purple-900/40 to-background" />
+            <div className="absolute inset-0 bg-gradient-to-b from-emerald-900/60 via-purple-900/40 to-background" />
           </div>
 
           <div className="container-width relative z-10 text-center px-4">
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-              <div className="inline-flex items-center gap-2 px-5 py-2 bg-purple-500/20 backdrop-blur-sm rounded-full mb-6 border border-purple-300/30">
-                <Sparkles className="w-4 h-4 text-purple-300" />
-                <span className="text-purple-100 font-semibold text-sm uppercase tracking-wider">2 Meses de Rejuvenecimiento</span>
+              <div className="inline-flex items-center gap-2 px-5 py-2 bg-emerald-500/20 backdrop-blur-sm rounded-full mb-6 border border-emerald-300/30">
+                <Sparkles className="w-4 h-4 text-emerald-300" />
+                <span className="text-emerald-100 font-semibold text-sm uppercase tracking-wider">2 Meses de Rejuvenecimiento</span>
               </div>
               
               <h1 className="font-serif text-5xl md:text-7xl text-white mb-6 leading-tight">
@@ -105,12 +105,12 @@ export default function RasayanaRejuvenecimientoPage() {
                 Revitaliza tu cuerpo y mente con el poder del Ayurveda en España
               </p>
               
-              <p className="text-lg text-purple-100 mb-8">
+              <p className="text-lg text-emerald-100 mb-8">
                 Del 19 de noviembre 2025 al 19 de enero 2026
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button size="lg" className="text-lg px-8 py-6 bg-purple-600 hover:bg-purple-700">
+                <Button size="lg" className="text-lg px-8 py-6 bg-emerald-600 hover:bg-emerald-700">
                   Reservar Plaza
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20">
@@ -121,15 +121,15 @@ export default function RasayanaRejuvenecimientoPage() {
           </div>
         </section>
 
-        <section className="py-20 bg-gradient-to-b from-white to-purple-50/30">
+        <section className="py-20 bg-gradient-to-b from-white to-teal-50/30">
           <div className="container-width px-4">
             <div className="max-w-4xl mx-auto">
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
                 <h2 className="font-serif text-4xl md:text-5xl text-gray-900 mb-6">
                   ¿Qué es Rasayana?
                 </h2>
-                <div className="inline-block bg-purple-100 border-l-4 border-purple-500 px-8 py-4 rounded-r-xl mb-8">
-                  <p className="text-2xl font-serif text-purple-900 italic">
+                <div className="inline-block bg-emerald-100 border-l-4 border-emerald-500 px-8 py-4 rounded-r-xl mb-8">
+                  <p className="text-2xl font-serif text-emerald-900 italic">
                     "Rasayana es aquello que rejuvenece naturalmente"
                   </p>
                 </div>
@@ -145,19 +145,19 @@ export default function RasayanaRejuvenecimientoPage() {
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-6 my-8">
-                  <div className="bg-purple-50 rounded-xl p-6 text-center">
-                    <Leaf className="w-12 h-12 text-purple-600 mx-auto mb-3" />
-                    <h3 className="font-semibold text-purple-900 mb-2">Aushadha Rasayana</h3>
+                  <div className="bg-emerald-50 rounded-xl p-6 text-center">
+                    <Leaf className="w-12 h-12 text-emerald-600 mx-auto mb-3" />
+                    <h3 className="font-semibold text-emerald-900 mb-2">Aushadha Rasayana</h3>
                     <p className="text-gray-700 text-sm">Plantas medicinales</p>
                   </div>
-                  <div className="bg-amber-50 rounded-xl p-6 text-center">
-                    <Heart className="w-12 h-12 text-amber-600 mx-auto mb-3" />
-                    <h3 className="font-semibold text-amber-900 mb-2">Ahara Rasayana</h3>
+                  <div className="bg-emerald-50 rounded-xl p-6 text-center">
+                    <Heart className="w-12 h-12 text-emerald-600 mx-auto mb-3" />
+                    <h3 className="font-semibold text-emerald-900 mb-2">Ahara Rasayana</h3>
                     <p className="text-gray-700 text-sm">Alimentación consciente</p>
                   </div>
-                  <div className="bg-teal-50 rounded-xl p-6 text-center">
-                    <Sun className="w-12 h-12 text-teal-600 mx-auto mb-3" />
-                    <h3 className="font-semibold text-teal-900 mb-2">Vihara Rasayana</h3>
+                  <div className="bg-emerald-50 rounded-xl p-6 text-center">
+                    <Sun className="w-12 h-12 text-emerald-600 mx-auto mb-3" />
+                    <h3 className="font-semibold text-emerald-900 mb-2">Vihara Rasayana</h3>
                     <p className="text-gray-700 text-sm">Estilo de vida y comportamiento</p>
                   </div>
                 </div>
@@ -189,25 +189,25 @@ export default function RasayanaRejuvenecimientoPage() {
 
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
-                      <span className="text-purple-500 font-bold text-xl">•</span>
+                      <span className="text-emerald-500 font-bold text-xl">•</span>
                       <span><strong>Preparados ayurvédicos</strong> certificados</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-purple-500 font-bold text-xl">•</span>
+                      <span className="text-emerald-500 font-bold text-xl">•</span>
                       <span><strong>Masajes y tratamientos</strong> específicos</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-purple-500 font-bold text-xl">•</span>
+                      <span className="text-emerald-500 font-bold text-xl">•</span>
                       <span><strong>Ajustes en la alimentación</strong> según dosha</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-purple-500 font-bold text-xl">•</span>
+                      <span className="text-emerald-500 font-bold text-xl">•</span>
                       <span><strong>Yoga, Pranayama y Meditación</strong> diarias</span>
                     </li>
                   </ul>
 
-                  <div className="bg-purple-50 rounded-xl p-6 border-l-4 border-purple-500">
-                    <p className="font-semibold text-purple-900">
+                  <div className="bg-emerald-50 rounded-xl p-6 border-l-4 border-emerald-500">
+                    <p className="font-semibold text-emerald-900">
                       Es la piedra angular perfecta para la prevención de la salud física y mental, y vivir más años con más calidad de vida.
                     </p>
                   </div>
@@ -228,7 +228,7 @@ export default function RasayanaRejuvenecimientoPage() {
           </div>
         </section>
 
-        <section className="py-20 bg-gradient-to-b from-purple-50/30 to-white">
+        <section className="py-20 bg-gradient-to-b from-emerald-50/30 to-white">
           <div className="container-width px-4">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
               <h2 className="font-serif text-4xl md:text-5xl text-gray-900 mb-6">
@@ -240,9 +240,9 @@ export default function RasayanaRejuvenecimientoPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {benefits.map((benefit, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
-                  <Card className="h-full border-purple-100 hover:border-purple-300 hover:shadow-xl transition-all">
+                  <Card className="h-full border-emerald-100 hover:border-emerald-300 hover:shadow-xl transition-all">
                     <CardContent className="p-6">
-                      <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mb-4">
+                      <div className="w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mb-4">
                         <benefit.icon className="w-7 h-7 text-white" />
                       </div>
                       <p className="text-gray-800 text-lg font-medium">{benefit.text}</p>
@@ -265,16 +265,16 @@ export default function RasayanaRejuvenecimientoPage() {
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               {included.map((item, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
-                  <Card className="h-full border-purple-100 hover:shadow-xl transition-all">
+                  <Card className="h-full border-emerald-100 hover:shadow-xl transition-all">
                     <CardContent className="p-8">
-                      <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mb-6">
+                      <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6">
                         <item.icon className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="font-serif text-2xl text-gray-900 mb-4">{item.title}</h3>
                       <ul className="space-y-2">
                         {item.items.map((subItem, idx) => (
                           <li key={idx} className="flex items-start gap-2 text-gray-700">
-                            <span className="text-purple-500 font-bold">✓</span>
+                            <span className="text-emerald-500 font-bold">✓</span>
                             <span>{subItem}</span>
                           </li>
                         ))}
@@ -287,7 +287,7 @@ export default function RasayanaRejuvenecimientoPage() {
           </div>
         </section>
 
-        <section className="py-20 bg-gradient-to-b from-purple-50/30 to-white">
+        <section className="py-20 bg-gradient-to-b from-emerald-50/30 to-white">
           <div className="container-width px-4">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
               <h2 className="font-serif text-4xl md:text-5xl text-gray-900 mb-6">
@@ -299,11 +299,11 @@ export default function RasayanaRejuvenecimientoPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
               {workshops.map((workshop, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
-                  <Card className="border-purple-100 hover:border-purple-300 hover:shadow-lg transition-all">
+                  <Card className="border-emerald-100 hover:border-emerald-300 hover:shadow-lg transition-all">
                     <CardContent className="p-6 text-center">
-                      <Calendar className="w-8 h-8 text-purple-600 mx-auto mb-3" />
+                      <Calendar className="w-8 h-8 text-emerald-600 mx-auto mb-3" />
                       <p className="font-semibold text-gray-900 mb-1 text-sm">{workshop.date}</p>
-                      <p className="text-purple-600 font-bold text-xl">{workshop.time}</p>
+                      <p className="text-emerald-600 font-bold text-xl">{workshop.time}</p>
                     </CardContent>
                   </Card>
                 </motion.div>
@@ -312,7 +312,7 @@ export default function RasayanaRejuvenecimientoPage() {
           </div>
         </section>
 
-        <section className="py-20 bg-gradient-to-br from-purple-600 to-pink-700 relative">
+        <section className="py-20 bg-gradient-to-br from-emerald-600 to-teal-700 relative">
           <div className="absolute inset-0 opacity-10">
             <Image
               src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=1920&q=80"
@@ -330,7 +330,7 @@ export default function RasayanaRejuvenecimientoPage() {
               
               <div className="bg-white/10 backdrop-blur-md rounded-3xl p-10 border border-white/20 mb-10">
                 <div className="mb-8">
-                  <p className="text-purple-100 text-xl mb-4">Programa de 2 meses</p>
+                  <p className="text-emerald-100 text-xl mb-4">Programa de 2 meses</p>
                   <p className="text-white text-3xl font-bold mb-4">19 Nov 2025 - 19 Ene 2026</p>
                 </div>
                 
@@ -339,7 +339,7 @@ export default function RasayanaRejuvenecimientoPage() {
                 </Button>
                 
                 <div className="border-t border-white/20 pt-6 mt-6">
-                  <p className="text-purple-100 text-lg mb-4">Charla Informativa Gratuita Online</p>
+                  <p className="text-emerald-100 text-lg mb-4">Charla Informativa Gratuita Online</p>
                   <p className="text-white text-2xl font-bold mb-4">11 de noviembre 2025 - 20:00h</p>
                   <Button size="lg" variant="outline" className="text-white border-white/30 hover:bg-white/20">
                     Asistir a Charla Gratuita
@@ -347,11 +347,11 @@ export default function RasayanaRejuvenecimientoPage() {
                 </div>
               </div>
 
-              <p className="text-purple-50 leading-relaxed mb-6">
+              <p className="text-emerald-50 leading-relaxed mb-6">
                 El <strong>Programa Rasayana-Rejuvenecimiento Harit Ayurveda</strong> desintoxica el organismo y al mismo tiempo reduce los efectos dañinos del estrés, nutre los tejidos y fortalece las capacidades rejuvenecedoras naturales del cuerpo.
               </p>
 
-              <p className="text-purple-100 text-sm">
+              <p className="text-emerald-100 text-sm">
                 ¿Tienes dudas? Escríbenos y hablamos pronto.
               </p>
             </motion.div>

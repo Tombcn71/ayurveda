@@ -117,16 +117,16 @@ export const HaritAyurvedaSection = () => {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="group"
             >
-              <div className="relative h-full bg-white rounded-3xl p-10 shadow-lg hover:shadow-2xl transition-all duration-500 border-2 border-amber-100 hover:border-amber-400">
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-amber-200 rounded-full blur-3xl opacity-60 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative h-full bg-white rounded-3xl p-10 shadow-lg hover:shadow-2xl transition-all duration-500 border-2 border-[#f5e8c7] hover:border-[#e0b126]">
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#f5e8c7] rounded-full blur-3xl opacity-60 group-hover:opacity-100 transition-opacity"></div>
                 
                 <div className="relative">
-                  <div className="w-20 h-20 bg-gradient-to-br from-amber-500 to-orange-600 rounded-3xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[#e0b126] to-[#d4a623] rounded-3xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
                     <Heart className="w-10 h-10 text-white" />
                   </div>
                   
                   <h3 className="font-serif text-3xl text-gray-900 mb-6 leading-tight">
-                    A quién <br/><span className="text-amber-600">ayudamos</span>
+                    A quién <br/><span className="text-[#e0b126]">ayudamos</span>
                   </h3>
                   
                   <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -135,23 +135,23 @@ export const HaritAyurvedaSection = () => {
                     </p>
                     <ul className="space-y-3 text-gray-700">
                       <li className="flex items-start gap-3">
-                        <span className="text-amber-500 font-bold mt-1">✓</span>
+                        <span className="text-[#e0b126] font-bold mt-1">✓</span>
                         <span><strong>Estrés crónico y ansiedad</strong> en España</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <span className="text-amber-500 font-bold mt-1">✓</span>
+                        <span className="text-[#e0b126] font-bold mt-1">✓</span>
                         <span><strong>Problemas digestivos</strong> (gastritis, colon irritable)</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <span className="text-amber-500 font-bold mt-1">✓</span>
+                        <span className="text-[#e0b126] font-bold mt-1">✓</span>
                         <span><strong>Desequilibrios hormonales</strong> y menopausia</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <span className="text-amber-500 font-bold mt-1">✓</span>
+                        <span className="text-[#e0b126] font-bold mt-1">✓</span>
                         <span><strong>Fatiga crónica e insomnio</strong></span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <span className="text-amber-500 font-bold mt-1">✓</span>
+                        <span className="text-[#e0b126] font-bold mt-1">✓</span>
                         <span><strong>Problemas de piel</strong> (eczema, psoriasis, acné)</span>
                       </li>
                     </ul>
@@ -171,16 +171,16 @@ export const HaritAyurvedaSection = () => {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="group"
             >
-              <div className="relative h-full bg-white rounded-3xl p-10 shadow-lg hover:shadow-2xl transition-all duration-500 border-2 border-teal-100 hover:border-teal-400">
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-teal-200 rounded-full blur-3xl opacity-60 group-hover:opacity-100 transition-opacity"></div>
+              <div className="relative h-full bg-white rounded-3xl p-10 shadow-lg hover:shadow-2xl transition-all duration-500 border-2 border-[#e8dde6] hover:border-[#ba9fb7]">
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#e8dde6] rounded-full blur-3xl opacity-60 group-hover:opacity-100 transition-opacity"></div>
                 
                 <div className="relative">
-                  <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-3xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[#ba9fb7] to-[#a88fa5] rounded-3xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
                     <Target className="w-10 h-10 text-white" />
                   </div>
                   
                   <h3 className="font-serif text-3xl text-gray-900 mb-6 leading-tight">
-                    Qué problema <br/><span className="text-teal-600">resolvemos</span>
+                    Qué problema <br/><span className="text-[#ba9fb7]">resolvemos</span>
                   </h3>
                   
                   <div className="space-y-4 text-gray-700 leading-relaxed">
@@ -189,23 +189,23 @@ export const HaritAyurvedaSection = () => {
                     </p>
                     <ul className="space-y-3 text-gray-700">
                       <li className="flex items-start gap-3">
-                        <span className="text-teal-500 font-bold mt-1">●</span>
+                        <span className="text-[#ba9fb7] font-bold mt-1">●</span>
                         <span><strong>Trastornos digestivos crónicos</strong> en España</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <span className="text-teal-500 font-bold mt-1">●</span>
+                        <span className="text-[#ba9fb7] font-bold mt-1">●</span>
                         <span><strong>Desórdenes metabólicos</strong> y problemas de peso</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <span className="text-teal-500 font-bold mt-1">●</span>
+                        <span className="text-[#ba9fb7] font-bold mt-1">●</span>
                         <span><strong>Problemas dermatológicos</strong> naturales</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <span className="text-teal-500 font-bold mt-1">●</span>
+                        <span className="text-[#ba9fb7] font-bold mt-1">●</span>
                         <span><strong>Alteraciones del sueño</strong> con Ayurveda</span>
                       </li>
                       <li className="flex items-start gap-3">
-                        <span className="text-teal-500 font-bold mt-1">●</span>
+                        <span className="text-[#ba9fb7] font-bold mt-1">●</span>
                         <span><strong>Dolencias musculoesqueléticas</strong></span>
                       </li>
                     </ul>

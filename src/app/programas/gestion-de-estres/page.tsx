@@ -171,12 +171,12 @@ export default function GestionDelEstresPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {testimonials.map((t, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
-                  <Card className="h-full border-amber-100 hover:shadow-xl transition-all">
+                  <Card className="h-full border-emerald-100 hover:shadow-xl transition-all">
                     <CardContent className="p-8">
-                      <Quote className="w-10 h-10 text-amber-400 mb-4" />
+                      <Quote className="w-10 h-10 text-emerald-400 mb-4" />
                       <p className="text-gray-700 leading-relaxed mb-6 italic">"{t.text}"</p>
                       <div className="flex gap-1 mb-3">
-                        {[...Array(5)].map((_, i) => (<Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />))}
+                        {[...Array(5)].map((_, i) => (<Star key={i} className="w-4 h-4 fill-amber-400 text-emerald-400" />))}
                       </div>
                       <p className="font-semibold text-gray-900">{t.name}</p>
                       {t.role && <p className="text-sm text-gray-600">{t.role}</p>}
