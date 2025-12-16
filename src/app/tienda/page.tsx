@@ -3,8 +3,8 @@ import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 export const metadata = {
   title: 'Tienda - Harit Ayurveda',
