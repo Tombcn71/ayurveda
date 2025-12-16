@@ -92,7 +92,7 @@ export default function CursoMeditacionPage() {
         <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-24">
           <div className="absolute inset-0 z-0">
             <Image
-              src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1920&q=80"
+              src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=1920&q=80"
               alt="Curso Meditación Trascendental Madrid España"
               fill
               className="object-cover brightness-50"

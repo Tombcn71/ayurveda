@@ -77,8 +77,8 @@ export default function ConsultasPage() {
         <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-24">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/consultation.jpg"
-              alt="Pilar Franco de Sarabia - Consultas Ayurveda España"
+              src="https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?w=1920&q=80"
+              alt="Consulta Ayurvédica Personalizada - Harit Ayurveda España"
               fill
               className="object-cover brightness-50"
               priority
