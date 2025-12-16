@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
+import { HaritAyurvedaSection } from "@/components/HaritAyurvedaSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ProductsSection } from "@/components/ProductsSection";
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
+        <HaritAyurvedaSection />
         <ServicesSection />
         <AboutSection />
         <ProductsSection />
@@ -21,4 +23,3 @@ export default function Home() {
     </div>
   );
 }
-
