@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Brain, Moon, Smile, Shield, Sparkles, Quote, Star } from "lucide-react";
@@ -207,7 +206,6 @@ export default function GestionDelEstresPage() {
           </div>
         </section>
 
-        <Footer />
       </div>
     </>
   );

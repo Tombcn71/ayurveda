@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Activity, Utensils, Sparkles, Brain, Leaf, Calendar, Phone, Video } from "lucide-react";
@@ -78,8 +77,8 @@ export default function ConsultasPage() {
         <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-24">
           <div className="absolute inset-0 z-0">
             <Image
-              src="https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?w=1920&q=80"
-              alt="Consultas Ayurveda España - Profesional ayurvédico"
+              src="/images/consultation.jpg"
+              alt="Pilar Franco de Sarabia - Consultas Ayurveda España"
               fill
               className="object-cover brightness-50"
               priority
@@ -356,7 +355,6 @@ export default function ConsultasPage() {
           </div>
         </section>
 
-        <Footer />
       </div>
     </>
   );

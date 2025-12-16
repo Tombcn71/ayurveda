@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Sparkles, Heart, Zap, Shield, Brain, Sun, Calendar, Book, Users, Video, Leaf } from "lucide-react";
@@ -359,7 +358,6 @@ export default function RasayanaRejuvenecimientoPage() {
           </div>
         </section>
 
-        <Footer />
       </div>
     </>
   );
