@@ -17,7 +17,8 @@ const navItems = [
       { name: "Rasayana - Rejuvenecimiento", href: "/programas/rasayana-rejuvenecimiento" }
     ]
   },
-  { name: "Meditación", href: "/curso-meditacion-trascendental" },
+  { name: "Blog", href: "/blog" },
+  { name: "Tienda", href: "/tienda" },  { name: "Meditación", href: "/curso-meditacion-trascendental" },
   { name: "Contacto", href: "#contacto" },
 ];
 
