@@ -14,11 +14,21 @@ const navItems = [
     subItems: [
       { name: "Gestión del Estrés", href: "/programas/gestion-de-estres" },
       { name: "Detox Harit Ayurveda", href: "/programas/detox-harit-ayurveda" },
-      { name: "Rasayana - Rejuvenecimiento", href: "/programas/rasayana-rejuvenecimiento" }
+      { name: "Rasayana - Rejuvenecimiento", href: "/programas/rasayana-rejuvenecimiento" },
+      { name: "Meditación Trascendental", href: "/curso-meditacion-trascendental" }
     ]
   },
-  { name: "Blog", href: "/blog" },
-  { name: "Tienda", href: "/tienda" },  { name: "Meditación", href: "/curso-meditacion-trascendental" },
+  { 
+    name: "Guías", 
+    subItems: [
+      { name: "Qué es Ayurveda", href: "/guia/que-es-ayurveda" },
+      { name: "Los Doshas", href: "/guia/doshas" },
+      { name: "Tratamientos", href: "/guia/tratamientos-ayurveda" },
+      { name: "Alimentación", href: "/guia/alimentacion-ayurvedica" },
+      { name: "Meditación", href: "/guia/meditacion-ayurveda" },
+      { name: "Ver todas las guías", href: "/guia" }
+    ]
+  },
   { name: "Contacto", href: "#contacto" },
 ];
 
