@@ -23,10 +23,7 @@ const navItems = [
     subItems: [
       { name: "Qué es Ayurveda", href: "/guia/que-es-ayurveda" },
       { name: "Los Doshas", href: "/guia/doshas" },
-      { name: "Tratamientos", href: "/guia/tratamientos-ayurveda" },
-      { name: "Alimentación", href: "/guia/alimentacion-ayurvedica" },
-      { name: "Meditación", href: "/guia/meditacion-ayurveda" },
-      { name: "Ver todas las guías", href: "/guia" }
+      { name: "Ayurveda en Madrid", href: "/guia/ayurveda-madrid" }
     ]
   },
   { name: "Contacto", href: "#contacto" },

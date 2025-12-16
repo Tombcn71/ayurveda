@@ -30,35 +30,11 @@ export default function GuiasPage() {
       category: 'Fundamentos'
     },
     {
-      slug: 'tratamientos-ayurveda',
-      title: 'Tratamientos Ayurvédicos',
-      description: 'Descubre Panchakarma, masajes y terapias ayurvédicas para tu salud',
-      image: 'https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=800&q=80',
-      readTime: '10 min',
-      category: 'Tratamientos'
-    },
-    {
-      slug: 'alimentacion-ayurvedica',
-      title: 'Alimentación Ayurvédica',
-      description: 'La guía completa de nutrición ayurvédica según tu dosha',
-      image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80',
-      readTime: '14 min',
-      category: 'Estilo de Vida'
-    },
-    {
-      slug: 'meditacion-ayurveda',
-      title: 'Meditación y Ayurveda',
-      description: 'Cómo la meditación complementa y potencia los beneficios del Ayurveda',
-      image: 'https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=800&q=80',
-      readTime: '8 min',
-      category: 'Mente y Espíritu'
-    },
-    {
       slug: 'ayurveda-madrid',
       title: 'Ayurveda en Madrid',
       description: 'Guía local: dónde encontrar tratamientos y consultas ayurvédicas en Madrid',
       image: 'https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800&q=80',
-      readTime: '6 min',
+      readTime: '10 min',
       category: 'Local'
     }
   ]
@@ -114,6 +90,16 @@ export default function GuiasPage() {
                   </Card>
                 </Link>
               ))}
+            </div>
+
+            {/* Coming Soon */}
+            <div className="mt-16 text-center">
+              <p className="text-gray-600 mb-4">Próximamente más guías sobre:</p>
+              <div className="flex flex-wrap justify-center gap-3">
+                <Badge variant="outline">Tratamientos Ayurvédicos</Badge>
+                <Badge variant="outline">Alimentación Ayurvédica</Badge>
+                <Badge variant="outline">Meditación y Ayurveda</Badge>
+              </div>
             </div>
           </div>
         </section>
