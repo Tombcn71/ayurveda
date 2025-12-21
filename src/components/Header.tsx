@@ -8,7 +8,13 @@ import Link from "next/link";
 
 const navItems = [
   { name: "Inicio", href: "/" },
-  { name: "Consultas", href: "/consultas" },
+  { 
+    name: "Consultas", 
+    subItems: [
+      { name: "Consultas Online", href: "/consultas/online" },
+      { name: "Consultas Presencial", href: "/consultas/presencial" }
+    ]
+  },
   { 
     name: "Programas", 
     subItems: [
@@ -26,13 +32,13 @@ const navItems = [
       { name: "Ayurveda en Madrid", href: "/guia/ayurveda-madrid" }
     ]
   },
-  { name: "Contacto", href: "#contacto" },
 ];
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [mobileOpenDropdown, setMobileOpenDropdown] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,24 +52,24 @@ export const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-soft py-3"
-          : "bg-transparent py-6"
+          ? "bg-background/95 backdrop-blur-md shadow-soft py-2 sm:py-3"
+          : "bg-transparent py-3 sm:py-6"
       }`}
     >
-      <nav className="container-width px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className={`p-2 rounded-xl transition-all duration-300 ${
+      <nav className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between gap-2">
+          <Link href="/" className="flex items-center gap-1.5 sm:gap-2 group flex-shrink-0">
+            <div className={`p-1.5 sm:p-2 rounded-xl transition-all duration-300 ${
               isScrolled ? "bg-primary" : "bg-cream/20 backdrop-blur-sm"
             }`}>
-              <Leaf className={`w-6 h-6 transition-colors duration-300 ${
+              <Leaf className={`w-5 h-5 sm:w-6 sm:h-6 transition-colors duration-300 ${
                 isScrolled ? "text-primary-foreground" : "text-cream"
               }`} />
             </div>
-            <span className={`font-serif text-2xl font-bold transition-colors duration-300 ${
+            <span className={`font-serif text-lg sm:text-2xl font-bold transition-colors duration-300 ${
               isScrolled ? "text-primary" : "text-cream"
             }`}>
-              Ayurveda Salud
+              Ayurveda
             </span>
           </Link>
 
@@ -116,9 +122,12 @@ export const Header = () => {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`md:hidden p-2 rounded-lg transition-colors ${
-              isScrolled ? "text-foreground" : "text-cream"
+            className={`md:hidden p-2 rounded-lg transition-all duration-300 flex-shrink-0 border-2 ${
+              isScrolled 
+                ? "text-primary bg-white border-primary/20 hover:bg-primary hover:text-white" 
+                : "text-white bg-primary/80 border-white/30 hover:bg-primary"
             }`}
+            aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -130,39 +139,59 @@ export const Header = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden mt-4 pb-4"
+              className="md:hidden mt-4 pb-4 overflow-hidden"
             >
-              <div className="flex flex-col gap-4 bg-card/95 backdrop-blur-md rounded-xl p-6 shadow-elevated">
+              <div className="flex flex-col gap-2 bg-white backdrop-blur-md rounded-xl p-5 shadow-lg border border-primary/10">
                 {navItems.map((item) => (
                   <div key={item.name}>
                     {item.subItems ? (
                       <>
-                        <div className="text-foreground font-medium py-2">{item.name}</div>
-                        <div className="pl-4 space-y-2">
-                          {item.subItems.map((subItem) => (
-                            <Link
-                              key={subItem.name}
-                              href={subItem.href}
-                              onClick={() => setIsMobileMenuOpen(false)}
-                              className="block text-muted-foreground py-1 hover:text-primary transition-colors"
+                        <button
+                          onClick={() => setMobileOpenDropdown(mobileOpenDropdown === item.name ? null : item.name)}
+                          className="w-full text-left text-foreground font-semibold py-3 px-4 rounded-lg transition-all hover:bg-primary/5 hover:text-primary active:bg-primary/10 flex items-center justify-between group"
+                        >
+                          <span className="flex items-center gap-2">
+                            {item.name}
+                            <ChevronDown className={`w-4 h-4 transition-transform text-primary ${mobileOpenDropdown === item.name ? 'rotate-180' : ''}`} />
+                          </span>
+                        </button>
+                        <AnimatePresence>
+                          {mobileOpenDropdown === item.name && (
+                            <motion.div
+                              initial={{ opacity: 0, height: 0 }}
+                              animate={{ opacity: 1, height: "auto" }}
+                              exit={{ opacity: 0, height: 0 }}
+                              className="pl-4 space-y-1 mt-1 overflow-hidden"
                             >
-                              {subItem.name}
-                            </Link>
-                          ))}
-                        </div>
+                              {item.subItems.map((subItem) => (
+                                <Link
+                                  key={subItem.name}
+                                  href={subItem.href}
+                                  onClick={() => {
+                                    setIsMobileMenuOpen(false);
+                                    setMobileOpenDropdown(null);
+                                  }}
+                                  className="block text-muted-foreground py-2 px-4 rounded-lg hover:bg-primary/5 hover:text-primary transition-all"
+                                >
+                                  {subItem.name}
+                                </Link>
+                              ))}
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
                       </>
                     ) : (
                       <Link
                         href={item.href || "#"}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className="text-foreground font-medium py-2 transition-colors hover:text-primary"
+                        className="text-foreground font-semibold py-3 px-4 rounded-lg transition-all hover:bg-primary/5 hover:text-primary active:bg-primary/10 block"
                       >
                         {item.name}
                       </Link>
                     )}
                   </div>
                 ))}
-                <Button variant="default" className="mt-2">
+                <Button variant="default" className="mt-2 w-full">
                   Reservar Cita
                 </Button>
               </div>
