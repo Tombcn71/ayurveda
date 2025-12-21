@@ -77,7 +77,7 @@ export default function ConsultasPresencialPage() {
         <section className="relative min-h-[70vh] sm:min-h-[85vh] flex items-center justify-center overflow-hidden pt-20 sm:pt-24">
           <div className="absolute inset-0 z-0">
             <Image
-              src="https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?w=1920&q=80"
+              src="https://images.pexels.com/photos/7176296/pexels-photo-7176296.jpeg?auto=compress&cs=tinysrgb&w=1920"
               alt="Consulta Ayurvédica Presencial - Harit Ayurveda España"
               fill
               className="object-cover brightness-50"
