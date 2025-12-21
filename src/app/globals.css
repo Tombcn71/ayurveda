@@ -123,11 +123,12 @@
     @apply border-border;
   }
 
-  body {
   html, body {
     @apply overflow-x-hidden;
     max-width: 100vw;
   }
+
+  body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Nunito Sans', sans-serif;
   }
@@ -212,4 +213,3 @@
   .delay-400 { animation-delay: 400ms; }
   .delay-500 { animation-delay: 500ms; }
 }
-
