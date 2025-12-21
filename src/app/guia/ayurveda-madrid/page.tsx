@@ -149,7 +149,7 @@ export default function AyurvedaMadridGuia() {
               </p>
 
               <div className="my-10 rounded-2xl overflow-hidden shadow-xl">
-                <Image src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=1200&q=80" alt="Tratamientos ayurveda Madrid" width={1200} height={600} className="w-full h-auto" />
+                <Image src="/images/Pilar-Foto-Home (2).jpg" alt="Pilar Franco - Experta en Ayurveda Madrid" width={1200} height={600} className="w-full h-auto brightness-[1.05] contrast-[1.1] saturate-[1.15]" />
               </div>
 
               <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-4">
@@ -232,7 +232,7 @@ export default function AyurvedaMadridGuia() {
               </ol>
 
               <div className="my-10 rounded-2xl overflow-hidden shadow-xl">
-                <Image src="https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?w=1200&q=80" alt="Consulta ayurveda Madrid" width={1200} height={600} className="w-full h-auto" />
+                <Image src="/images/hero-ayurveda.jpg" alt="Centro Ayurveda Madrid - Consultas" width={1200} height={600} className="w-full h-auto brightness-105 contrast-110 saturate-110" />
               </div>
 
               <h2 className="text-3xl font-bold text-emerald-900 mt-12 mb-6">
