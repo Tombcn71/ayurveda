@@ -66,7 +66,7 @@ export const Header = () => {
                 isScrolled ? "text-primary-foreground" : "text-cream"
               }`} />
             </div>
-            <span className={`font-serif text-lg sm:text-2xl font-bold transition-colors duration-300 ${
+            <span className={`font-serif text-base sm:text-lg md:text-2xl font-bold transition-colors duration-300 ${
               isScrolled ? "text-primary" : "text-cream"
             }`}>
               Ayurveda
@@ -122,7 +122,7 @@ export const Header = () => {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`md:hidden p-2 rounded-lg transition-all duration-300 flex-shrink-0 border-2 ${
+            className={`md:hidden p-2.5 rounded-lg transition-all duration-300 flex-shrink-0 border-2 ${
               isScrolled 
                 ? "text-primary bg-white border-primary/20 hover:bg-primary hover:text-white" 
                 : "text-white bg-primary/80 border-white/30 hover:bg-primary"

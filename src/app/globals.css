@@ -124,6 +124,10 @@
   }
 
   body {
+  html, body {
+    @apply overflow-x-hidden;
+    max-width: 100vw;
+  }
     @apply bg-background text-foreground antialiased;
     font-family: 'Nunito Sans', sans-serif;
   }
