@@ -121,15 +121,9 @@ export default function QueEsAyurvedaGuia() {
               La ciencia milenaria de la vida para tu salud y bienestar en el mundo moderno
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-emerald-200">
-              <span className="flex items-center gap-2">
-                <Users className="w-4 h-4" />
-                Por Pilar Franco de Sarabia
-              </span>
               <span>•</span>
-              <span className="flex items-center gap-2">
                 <Clock className="w-4 h-4" />
                 15 min lectura
-              </span>
               <span>•</span>
               <span>Actualizado 2025</span>
             </div>
