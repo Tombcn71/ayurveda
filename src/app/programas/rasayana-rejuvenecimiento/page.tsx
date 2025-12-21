@@ -92,28 +92,28 @@ export default function RasayanaRejuvenecimientoPage() {
 
           <div className="container-width relative z-10 text-center px-4">
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-              <div className="inline-flex items-center gap-2 px-5 py-2 bg-emerald-500/20 backdrop-blur-sm rounded-full mb-6 border border-emerald-300/30">
-                <Sparkles className="w-4 h-4 text-emerald-300" />
-                <span className="text-emerald-100 font-semibold text-sm uppercase tracking-wider">2 Meses de Rejuvenecimiento</span>
+              <div className="inline-flex items-center gap-2 px-3 sm:px-5 py-1.5 sm:py-2 bg-emerald-500/20 backdrop-blur-sm rounded-full mb-4 sm:mb-6 border border-emerald-300/30">
+                <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-emerald-300" />
+                <span className="text-emerald-100 font-semibold text-xs sm:text-sm uppercase tracking-wider">2 Meses de Rejuvenecimiento</span>
               </div>
               
-              <h1 className="font-serif text-5xl md:text-7xl text-white mb-6 leading-tight">
+              <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6 leading-tight px-2">
                 Programa Rasayana<br/>Rejuvenecimiento
               </h1>
               
-              <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-4 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto mb-3 sm:mb-4 leading-relaxed px-4">
                 Revitaliza tu cuerpo y mente con el poder del Ayurveda en España
               </p>
               
-              <p className="text-lg text-emerald-100 mb-8">
+              <p className="text-sm sm:text-base md:text-lg text-emerald-100 mb-6 sm:mb-8">
                 Del 19 de noviembre 2025 al 19 de enero 2026
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button size="lg" className="text-lg px-8 py-6 bg-emerald-600 hover:bg-emerald-700">
+                <Button size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-emerald-600 hover:bg-emerald-700">
                   Reservar Plaza
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20">
+                <Button size="lg" variant="outline" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20">
                   Charla Gratuita - 11 Nov
                 </Button>
               </div>
