@@ -117,7 +117,7 @@ export default function QueEsAyurvedaGuia() {
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Qué es Ayurveda
             </h1>
-            <p className="text-xl md:text-2xl text-emerald-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-emerald-100 mb-8 max-w-3xl mx-auto">
               La ciencia milenaria de la vida para tu salud y bienestar en el mundo moderno
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-emerald-200">
@@ -437,7 +437,7 @@ export default function QueEsAyurvedaGuia() {
               <h2 className="text-3xl font-bold mb-4">
                 ¿Listo para Experimentar el Ayurveda?
               </h2>
-              <p className="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-emerald-100 mb-8 max-w-2xl mx-auto">
                 Descubre tu constitución única y cómo el Ayurveda puede transformar tu salud y bienestar con una consulta personalizada.
               </p>
               <div className="flex flex-wrap justify-center gap-4">

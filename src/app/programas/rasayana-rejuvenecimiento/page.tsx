@@ -97,11 +97,11 @@ export default function RasayanaRejuvenecimientoPage() {
                 <span className="text-emerald-100 font-semibold text-xs sm:text-sm uppercase tracking-wider">2 Meses de Rejuvenecimiento</span>
               </div>
               
-              <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6 leading-tight px-2">
+              <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6 sm:mb-6 leading-tight px-2">
                 Programa Rasayana<br/>Rejuvenecimiento
               </h1>
               
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto mb-3 sm:mb-4 leading-relaxed px-4">
+              <p className="text-base sm:text-lg md:text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto mb-3 sm:mb-4 leading-relaxed px-4">
                 Revitaliza tu cuerpo y mente con el poder del Ayurveda en España
               </p>
               
@@ -324,7 +324,7 @@ export default function RasayanaRejuvenecimientoPage() {
 
           <div className="container-width px-4 relative z-10">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center max-w-4xl mx-auto">
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6">
                 Únete al Programa Rasayana
               </h2>
               

@@ -68,11 +68,11 @@ export default function DetoxHaritAyurvedaPage() {
                 <span className="text-emerald-100 font-semibold text-sm uppercase tracking-wider">14 Días de Transformación</span>
               </div>
               
-              <h1 className="font-serif text-5xl md:text-7xl text-white mb-6 leading-tight">
+              <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6 leading-tight">
                 Detox Harit Ayurveda
               </h1>
               
-              <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-4 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto mb-4 leading-relaxed">
                 Programa de limpieza estacional completa en España
               </p>
               
@@ -331,12 +331,12 @@ export default function DetoxHaritAyurvedaPage() {
 
           <div className="container-width px-4 relative z-10">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center max-w-4xl mx-auto">
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6">
                 Inscríbete al Detox
               </h2>
               
               <div className="bg-white/10 backdrop-blur-md rounded-3xl p-10 border border-white/20 mb-10">
-                <div className="text-6xl font-bold text-white mb-2">275€</div>
+                <div className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6">275€</div>
                 <div className="text-emerald-100 text-xl mb-2">Programa Detox de 14 días</div>
                 <div className="text-sm text-emerald-200 mb-6">*Gastos de envío no incluidos</div>
                 <div className="text-sm text-emerald-200 mb-8">

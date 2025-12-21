@@ -92,7 +92,7 @@ export default function AyurvedaMadridGuia() {
               Guía Local
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Ayurveda en Madrid</h1>
-            <p className="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-emerald-100 max-w-3xl mx-auto">
               Tu centro de Ayurveda con más de 25 años de experiencia en la zona de Madrid
             </p>
           </div>
@@ -265,7 +265,7 @@ export default function AyurvedaMadridGuia() {
             {/* CTA */}
             <Card className="p-10 mt-12 bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-center">
               <h2 className="text-3xl font-bold mb-4">Reserva Tu Consulta en Madrid</h2>
-              <p className="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-emerald-100 mb-8 max-w-2xl mx-auto">
                 Descubre cómo el Ayurveda puede transformar tu salud. Primera consulta disponible presencial u online.
               </p>
               <div className="flex flex-wrap justify-center gap-4">

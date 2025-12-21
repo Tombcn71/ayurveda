@@ -36,7 +36,7 @@ export default function DoshasGuia() {
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
             <Badge className="mb-4 bg-emerald-500/20 text-emerald-100 border-emerald-400/30">Guía Completa</Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Los Tres Doshas</h1>
-            <p className="text-xl md:text-2xl text-emerald-100 max-w-3xl mx-auto">Vata, Pitta y Kapha: Descubre tu constitución única</p>
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-emerald-100 max-w-3xl mx-auto">Vata, Pitta y Kapha: Descubre tu constitución única</p>
           </div>
         </section>
 
@@ -144,7 +144,7 @@ export default function DoshasGuia() {
             {/* CTA */}
             <Card className="p-10 mt-12 bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-center">
               <h2 className="text-3xl font-bold mb-4">Descubre Tu Dosha</h2>
-              <p className="text-xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-emerald-100 mb-8 max-w-2xl mx-auto">
                 Una consulta ayurvédica determinará tu constitución única y cómo equilibrar tus doshas
               </p>
               <Link href="/consultas">

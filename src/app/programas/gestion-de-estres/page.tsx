@@ -76,9 +76,9 @@ export default function GestionDelEstresPage() {
                 <span className="text-emerald-100 font-semibold text-sm uppercase tracking-wider">Programa Certificado</span>
               </div>
               
-              <h1 className="font-serif text-5xl md:text-7xl text-white mb-6 leading-tight">Gestión del Estrés</h1>
+              <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6 leading-tight">Gestión del Estrés</h1>
               
-              <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto mb-8 leading-relaxed">
                 Programa ayurvédico integral en España para superar ansiedad, depresión y agotamiento
               </p>
 
@@ -191,13 +191,13 @@ export default function GestionDelEstresPage() {
         <section className="py-20 bg-gradient-to-br from-emerald-600 to-teal-700 relative">
           <div className="container-width px-4 relative z-10">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center max-w-4xl mx-auto">
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">¿Cómo empezar?</h2>
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6">¿Cómo empezar?</h2>
               <p className="text-xl text-emerald-50 leading-relaxed mb-8">
                 Tu primer acercamiento al <strong>Ayurveda en España</strong> para resolver problemas de depresión, ansiedad o agotamiento.
               </p>
 
               <div className="bg-white/10 backdrop-blur-md rounded-3xl p-10 border border-white/20 mb-10">
-                <div className="text-5xl font-bold text-white mb-2">121€</div>
+                <div className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6">121€</div>
                 <div className="text-emerald-100 text-lg mb-4">Primera Consulta Ayurvédica</div>
                 <div className="text-sm text-emerald-200 mb-6">*Esta cantidad se restará del programa completo</div>
                 <Button size="lg" variant="secondary" className="text-lg px-10 py-6">Reservar Primera Consulta</Button>

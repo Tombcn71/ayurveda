@@ -108,11 +108,11 @@ export default function CursoMeditacionPage() {
                 <span className="text-emerald-100 font-semibold text-sm uppercase tracking-wider">Curso Certificado</span>
               </div>
               
-              <h1 className="font-serif text-5xl md:text-7xl text-white mb-6 leading-tight">
+              <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6 leading-tight">
                 Curso de Meditación<br/>Trascendental
               </h1>
               
-              <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-4 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto mb-4 leading-relaxed">
                 Aprende la técnica en 4 sesiones con Pilar Franco de Sarabia
               </p>
               
@@ -291,7 +291,7 @@ export default function CursoMeditacionPage() {
 
           <div className="container-width px-4 relative z-10">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center max-w-4xl mx-auto">
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6">
                 Información y Contacto
               </h2>
               

@@ -93,11 +93,11 @@ export default function ConsultasOnlinePage() {
                 <span className="text-emerald-100 font-semibold text-xs sm:text-sm uppercase tracking-wider">Consultas Online</span>
               </div>
               
-              <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6 leading-tight px-2">
+              <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6 sm:mb-6 leading-tight px-2">
                 Consultas de Ayurveda<br/>Online
               </h1>
               
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed px-2">
+              <p className="text-base sm:text-lg md:text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed px-2">
                 Evaluación completa desde la comodidad de tu hogar
               </p>
 
@@ -216,14 +216,14 @@ export default function ConsultasOnlinePage() {
 
           <div className="container-width px-4 relative z-10">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center max-w-5xl mx-auto">
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-12">
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-62">
                 Tarifas Consultas Online
               </h2>
               
               <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <div className="bg-white/10 backdrop-blur-md rounded-3xl p-10 border-2 border-white/30">
-                  <h3 className="text-2xl font-serif text-white mb-6">Primera Consulta Online</h3>
-                  <div className="text-6xl font-bold text-white mb-4">125€</div>
+                  <h3 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6">Primera Consulta Online</h3>
+                  <div className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6">125€</div>
                   <div className="text-emerald-100 text-xl mb-6">60 minutos</div>
                   <ul className="text-left space-y-3 text-emerald-50">
                     <li className="flex items-start gap-2">
@@ -242,8 +242,8 @@ export default function ConsultasOnlinePage() {
                 </div>
 
                 <div className="bg-white/10 backdrop-blur-md rounded-3xl p-10 border border-white/20">
-                  <h3 className="text-2xl font-serif text-white mb-6">Consulta de Seguimiento</h3>
-                  <div className="text-6xl font-bold text-white mb-4">75€</div>
+                  <h3 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6">Consulta de Seguimiento</h3>
+                  <div className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6">75€</div>
                   <div className="text-emerald-100 text-xl mb-6">30 minutos</div>
                   <ul className="text-left space-y-3 text-emerald-50">
                     <li className="flex items-start gap-2">
