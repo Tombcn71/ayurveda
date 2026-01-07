@@ -9,6 +9,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Header } from "@/components/Header";
 import { DoshaQuiz } from "@/components/DoshaQuiz";
 import { HaritAyurvedaSection } from "@/components/HaritAyurvedaSection";
+import { FloatingCTA } from "@/components/FloatingCTA";
 
 // Services data
 const services = [
@@ -274,7 +275,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left - Hero Text */}
             <div>
-              <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-primary bg-sage-light/60 rounded-full animate-fade-up block sm:inline-block text-center sm:text-left">
+              <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-primary bg-sage-light/60 rounded-full animate-fade-up hidden md:inline-block">
                 + de 20 años de experiencia
               </span>
               
@@ -283,11 +284,18 @@ export default function Home() {
                 <span className="text-[#8C986B] italic">equilibrio</span>
               </h1>
               
-              <p className="text-lg md:text-xl text-black mb-10 max-w-xl leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
+              <p className="text-lg md:text-xl text-black mb-6 max-w-xl leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
                 Descubre la sabiduría milenaria del Ayurveda combinada con ciencia moderna para recuperar tu bienestar natural.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+              <div className="flex justify-center mb-10 md:hidden">
+                <span className="inline-flex items-center gap-2 px-6 py-3 text-base font-medium text-primary bg-sage-light/60 rounded-full animate-fade-up">
+                  <Leaf className="w-5 h-5" />
+                  + de 20 años de experiencia
+                </span>
+              </div>
+
+              <div className="hidden md:flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
                 <Button 
                   variant="default" 
                   size="lg"
@@ -914,6 +922,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      <FloatingCTA />
       </main>
   );
 }
