@@ -58,14 +58,14 @@ export default function DetoxHaritAyurvedaPage() {
               className="object-cover brightness-50"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/30" />
           </div>
 
           <div className="container-width relative z-10 text-center px-4">
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-              <div className="inline-flex items-center gap-2 px-5 py-2 bg-emerald-500/20 backdrop-blur-sm rounded-full mb-6 border border-emerald-300/30">
-                <Leaf className="w-4 h-4 text-emerald-300" />
-                <span className="text-emerald-100 font-semibold text-sm uppercase tracking-wider">14 Días de Transformación</span>
+              <div className="inline-flex items-center gap-2 px-5 py-2 bg-transparent rounded-full mb-6 border border-white/50">
+                <Leaf className="w-4 h-4 text-white" />
+                <span className="text-white font-semibold text-sm uppercase tracking-wider">14 Días de Transformación</span>
               </div>
               
               <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6 leading-tight">
@@ -76,12 +76,12 @@ export default function DetoxHaritAyurvedaPage() {
                 Programa de limpieza estacional completa en España
               </p>
               
-              <p className="text-lg text-emerald-100 mb-8">
+              <p className="text-lg text-white mb-8">
                 Del 14 al 27 de abril de 2026
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button size="lg" className="text-lg px-8 py-6 bg-emerald-600 hover:bg-emerald-700">
+                <Button size="lg" className="text-lg px-8 py-6 bg-verde-salvia hover:bg-verde-salvia/90 text-white">
                   Inscríbete - 275€
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20">
@@ -110,7 +110,7 @@ export default function DetoxHaritAyurvedaPage() {
                   Se puede realizar <strong>cómodamente desde casa en España</strong> y puede compatibilizarse incluso con tu trabajo.
                 </p>
 
-                <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-lg my-8">
+                <div className="bg-verde-salvia/10 border-l-4 border-verde-salvia p-6 rounded-r-lg my-8">
                   <p className="text-gray-800 text-lg">
                     Esta suave experiencia de <strong>desintoxicación de 2 semanas</strong> te ayudará a equilibrar el azúcar y limpiar el sistema linfático; y restablecer el metabolismo y la digestión natural de las grasas. Te sentirás más fuerte, más clar@ y preparad@ para enfrentar cualquier cosa que se te presente.
                   </p>
@@ -141,8 +141,8 @@ export default function DetoxHaritAyurvedaPage() {
 
                 <div className="space-y-6 text-gray-700 leading-relaxed">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Sparkles className="w-6 h-6 text-emerald-600" />
+                    <div className="w-12 h-12 bg-verde-salvia/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Sparkles className="w-6 h-6 text-verde-salvia" />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900 mb-2">NO pasarás hambre</p>
@@ -151,8 +151,8 @@ export default function DetoxHaritAyurvedaPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Users className="w-6 h-6 text-emerald-600" />
+                    <div className="w-12 h-12 bg-verde-salvia/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Users className="w-6 h-6 text-verde-salvia" />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900 mb-2">Apoyo constante</p>
@@ -161,8 +161,8 @@ export default function DetoxHaritAyurvedaPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Heart className="w-6 h-6 text-emerald-600" />
+                    <div className="w-12 h-12 bg-verde-salvia/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <Heart className="w-6 h-6 text-verde-salvia" />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900 mb-2">Acompañamiento profesional</p>
@@ -189,7 +189,7 @@ export default function DetoxHaritAyurvedaPage() {
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Card className="h-full border-emerald-100 hover:border-emerald-300 hover:shadow-xl transition-all">
                     <CardContent className="p-6">
-                      <div className="w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mb-4">
+                      <div className="w-14 h-14 bg-verde-salvia rounded-2xl flex items-center justify-center mb-4">
                         <benefit.icon className="w-7 h-7 text-white" />
                       </div>
                       <p className="text-gray-800 text-lg font-medium">{benefit.text}</p>
@@ -200,7 +200,7 @@ export default function DetoxHaritAyurvedaPage() {
             </div>
 
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center">
-              <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-3xl p-10 border-2 border-emerald-200 max-w-3xl mx-auto">
+              <div className="bg-verde-salvia/10 rounded-3xl p-10 border-2 border-verde-salvia/30 max-w-3xl mx-auto">
                 <p className="text-2xl font-serif text-gray-900 mb-4">
                   Te sentirás más liger@, clar@, creativ@, y eficiente
                 </p>
@@ -221,52 +221,52 @@ export default function DetoxHaritAyurvedaPage() {
                 </h2>
 
                 <div className="space-y-6">
-                  <div className="bg-emerald-50 rounded-2xl p-6">
+                  <div className="bg-verde-salvia/10 rounded-2xl p-6">
                     <h3 className="font-semibold text-xl text-gray-900 mb-4 flex items-center gap-2">
-                      <Video className="w-6 h-6 text-emerald-600" />
+                      <Video className="w-6 h-6 text-verde-salvia" />
                       5 Workshops Interactivos por Zoom
                     </h3>
                     <ul className="space-y-2 text-gray-700">
                       <li className="flex items-start gap-2">
-                        <span className="text-emerald-500 font-bold">•</span>
+                        <span className="text-verde-salvia font-bold">•</span>
                         <span>Ejercicios de Ayurveda</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-emerald-500 font-bold">•</span>
+                        <span className="text-verde-salvia font-bold">•</span>
                         <span>Yoga-asanas</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-emerald-500 font-bold">•</span>
+                        <span className="text-verde-salvia font-bold">•</span>
                         <span>Pranayamas (ejercicios de respiración)</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-emerald-500 font-bold">•</span>
+                        <span className="text-verde-salvia font-bold">•</span>
                         <span>Práctica de masaje</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-emerald-500 font-bold">•</span>
+                        <span className="text-verde-salvia font-bold">•</span>
                         <span>Compartir dudas y experiencias</span>
                       </li>
                     </ul>
                   </div>
 
-                  <div className="bg-cyan-50 rounded-2xl p-6">
+                  <div className="bg-verde-salvia/10 rounded-2xl p-6">
                     <h3 className="font-semibold text-xl text-gray-900 mb-4">Y además:</h3>
                     <ul className="space-y-2 text-gray-700">
                       <li className="flex items-start gap-2">
-                        <span className="text-cyan-500 font-bold">✓</span>
+                        <span className="text-verde-salvia font-bold">✓</span>
                         <span>Guía completa paso a paso y recetas (PDF)</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-cyan-500 font-bold">✓</span>
+                        <span className="text-verde-salvia font-bold">✓</span>
                         <span>Seguimiento a través del grupo de WhatsApp</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-cyan-500 font-bold">✓</span>
+                        <span className="text-verde-salvia font-bold">✓</span>
                         <span>Pack de productos ayurvédicos</span>
                       </li>
                       <li className="flex items-start gap-2">
-                        <span className="text-cyan-500 font-bold">✓</span>
+                        <span className="text-verde-salvia font-bold">✓</span>
                         <span>Grabaciones de todos los workshops</span>
                       </li>
                     </ul>
@@ -302,7 +302,7 @@ export default function DetoxHaritAyurvedaPage() {
                 <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Card className="border-emerald-100 hover:border-emerald-300 hover:shadow-lg transition-all">
                     <CardContent className="p-6 text-center">
-                      <Calendar className="w-8 h-8 text-emerald-600 mx-auto mb-3" />
+                      <Calendar className="w-8 h-8 text-verde-salvia mx-auto mb-3" />
                       <p className="font-semibold text-gray-900 mb-1">{workshop.date}</p>
                       <p className="text-emerald-600 font-bold text-xl">{workshop.time}</p>
                     </CardContent>
@@ -319,7 +319,7 @@ export default function DetoxHaritAyurvedaPage() {
           </div>
         </section>
 
-        <section className="py-20 bg-gradient-to-br from-emerald-600 to-teal-700 relative">
+        <section className="py-20 bg-verde-salvia relative">
           <div className="absolute inset-0 opacity-10">
             <Image
               src="https://images.unsplash.com/photo-1447452001602-7090c7ab2db3?w=1920&q=80"
@@ -342,7 +342,7 @@ export default function DetoxHaritAyurvedaPage() {
                 <div className="text-sm text-emerald-200 mb-8">
                   20% de descuento en productos si ya has hecho un Detox con nosotros
                 </div>
-                <Button size="lg" variant="secondary" className="text-lg px-10 py-6 mb-6">
+                <Button size="lg" variant="hero" className="text-lg px-10 py-6 mb-6">
                   Inscribirme Ahora
                 </Button>
                 <div className="border-t border-white/20 pt-6 mt-6">

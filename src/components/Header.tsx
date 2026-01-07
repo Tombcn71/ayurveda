@@ -52,23 +52,17 @@ export const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-soft py-2 sm:py-3"
-          : "bg-transparent py-3 sm:py-6"
+          ? "bg-white/95 backdrop-blur-md shadow-soft py-2 sm:py-3"
+          : "bg-white/95 backdrop-blur-md py-3 sm:py-6"
       }`}
     >
       <nav className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-2">
           <Link href="/" className="flex items-center gap-1.5 sm:gap-2 group flex-shrink-0">
-            <div className={`p-1.5 sm:p-2 rounded-xl transition-all duration-300 ${
-              isScrolled ? "bg-primary" : "bg-cream/20 backdrop-blur-sm"
-            }`}>
-              <Leaf className={`w-5 h-5 sm:w-6 sm:h-6 transition-colors duration-300 ${
-                isScrolled ? "text-primary-foreground" : "text-cream"
-              }`} />
+            <div className="p-1.5 sm:p-2 rounded-xl transition-all duration-300 bg-verde-salvia">
+              <Leaf className="w-5 h-5 sm:w-6 sm:h-6 transition-colors duration-300 text-white" />
             </div>
-            <span className={`font-serif text-base sm:text-lg md:text-2xl font-bold transition-colors duration-300 ${
-              isScrolled ? "text-primary" : "text-cream"
-            }`}>
+            <span className="font-serif text-base sm:text-lg md:text-2xl font-bold transition-colors duration-300 text-verde-oscuro">
               Ayurveda
             </span>
           </Link>
@@ -80,9 +74,7 @@ export const Header = () => {
                   <div className="relative">
                     <button
                       onClick={() => setOpenDropdown(openDropdown === item.name ? null : item.name)}
-                      className={`font-medium transition-all duration-300 hover:opacity-80 flex items-center gap-1 ${
-                        isScrolled ? "text-foreground" : "text-cream"
-                      }`}
+                      className="font-medium transition-all duration-300 hover:opacity-80 flex items-center gap-1 text-verde-oscuro"
                     >
                       {item.name}
                       <ChevronDown className={`w-4 h-4 transition-transform ${openDropdown === item.name ? 'rotate-180' : ''}`} />
@@ -105,28 +97,22 @@ export const Header = () => {
                 ) : (
                   <Link
                     href={item.href || "#"}
-                    className={`font-medium transition-all duration-300 hover:opacity-80 relative group ${
-                      isScrolled ? "text-foreground" : "text-cream"
-                    }`}
+                    className="font-medium transition-all duration-300 hover:opacity-80 relative group text-verde-oscuro"
                   >
                     {item.name}
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full" />
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-verde-salvia transition-all duration-300 group-hover:w-full" />
                   </Link>
                 )}
               </div>
             ))}
-            <Button variant={isScrolled ? "default" : "hero"} size="sm">
+            <Button variant="default" size="sm" className="bg-verde-salvia hover:bg-verde-salvia/90 text-white">
               Reservar Cita
             </Button>
           </div>
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`md:hidden p-2.5 rounded-lg transition-all duration-300 flex-shrink-0 border-2 ${
-              isScrolled 
-                ? "text-primary bg-white border-primary/20 hover:bg-primary hover:text-white" 
-                : "text-white bg-primary/80 border-white/30 hover:bg-primary"
-            }`}
+            className="md:hidden p-2.5 rounded-lg transition-all duration-300 flex-shrink-0 border-2 text-verde-oscuro bg-white border-verde-salvia/20 hover:bg-verde-salvia hover:text-white"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

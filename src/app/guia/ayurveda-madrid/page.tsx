@@ -85,27 +85,27 @@ export default function AyurvedaMadridGuia() {
         {/* Hero */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <Image src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=1920&q=80" alt="Ayurveda en Madrid" fill className="object-cover" priority />
-          <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/90 to-teal-900/70" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/40" />
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-            <Badge className="mb-4 bg-emerald-500/20 text-emerald-100 border-emerald-400/30">
-              <MapPin className="w-4 h-4 mr-2" />
+            <Badge className="mb-4 bg-transparent text-white border-white/50">
+              <MapPin className="w-4 h-4 mr-2 text-white" />
               Guía Local
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Ayurveda en Madrid</h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-emerald-100 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto">
               Tu centro de Ayurveda con más de 25 años de experiencia en la zona de Madrid
             </p>
           </div>
         </section>
 
-        <div className="bg-gradient-to-br from-emerald-50 to-teal-50">
+        <div className="bg-background">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             {/* Quick Info */}
-            <Card className="p-8 mb-12 border-l-4 border-emerald-600 bg-white">
-              <h2 className="text-2xl font-bold text-emerald-900 mb-6">Centro Harit Ayurveda en Madrid</h2>
+            <Card className="p-8 mb-12 border-l-4 border-verde-salvia bg-verde-salvia/10">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Centro Harit Ayurveda en Madrid</h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="flex items-start gap-3">
-                  <MapPin className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
+                  <MapPin className="w-6 h-6 text-verde-salvia flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-gray-900">Ubicación</h3>
                     <p className="text-gray-600">Zona Pozuelo / Las Rozas, Madrid</p>
@@ -113,7 +113,7 @@ export default function AyurvedaMadridGuia() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Phone className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
+                  <Phone className="w-6 h-6 text-verde-salvia flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-gray-900">Contacto</h3>
                     <p className="text-gray-600">664 462 368</p>
@@ -121,7 +121,7 @@ export default function AyurvedaMadridGuia() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Clock className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
+                  <Clock className="w-6 h-6 text-verde-salvia flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-gray-900">Horario</h3>
                     <p className="text-gray-600">Lun-Vie: 9:00 - 20:00</p>
@@ -129,7 +129,7 @@ export default function AyurvedaMadridGuia() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Euro className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
+                  <Euro className="w-6 h-6 text-verde-salvia flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-gray-900">Primera Consulta</h3>
                     <p className="text-gray-600">125€ (online) / 140€ (presencial)</p>
@@ -141,7 +141,7 @@ export default function AyurvedaMadridGuia() {
 
             {/* Content */}
             <div className="prose prose-lg max-w-none">
-              <h2 className="text-3xl font-bold text-emerald-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
                 ¿Por Qué Elegir Harit Ayurveda en Madrid?
               </h2>
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -152,33 +152,33 @@ export default function AyurvedaMadridGuia() {
                 <Image src="/images/Pilar-Foto-Home (2).jpg" alt="Pilar Franco - Experta en Ayurveda Madrid" width={1200} height={600} className="w-full h-auto brightness-[1.05] contrast-[1.1] saturate-[1.15]" />
               </div>
 
-              <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-4">
+              <h3 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
                 Servicios de Ayurveda en Madrid
               </h3>
               <div className="grid md:grid-cols-2 gap-6 my-8 not-prose">
                 <Card className="p-6">
-                  <h4 className="font-bold text-lg text-emerald-900 mb-3">Consultas Ayurvédicas</h4>
+                  <h4 className="font-bold text-lg text-gray-900 mb-3">Consultas Ayurvédicas</h4>
                   <p className="text-gray-600 mb-3">Evaluación completa con lectura de pulso ayurvédico (Nadi Vigyam) y plan personalizado</p>
-                  <p className="text-emerald-600 font-semibold">Desde 125€</p>
+                  <p className="text-verde-salvia font-semibold">Desde 125€</p>
                 </Card>
                 <Card className="p-6">
-                  <h4 className="font-bold text-lg text-emerald-900 mb-3">Tratamientos Panchakarma</h4>
+                  <h4 className="font-bold text-lg text-gray-900 mb-3">Tratamientos Panchakarma</h4>
                   <p className="text-gray-600 mb-3">Terapias de desintoxicación y rejuvenecimiento profundo</p>
-                  <p className="text-emerald-600 font-semibold">Consultar</p>
+                  <p className="text-verde-salvia font-semibold">Consultar</p>
                 </Card>
                 <Card className="p-6">
-                  <h4 className="font-bold text-lg text-emerald-900 mb-3">Masajes Ayurvédicos</h4>
+                  <h4 className="font-bold text-lg text-gray-900 mb-3">Masajes Ayurvédicos</h4>
                   <p className="text-gray-600 mb-3">Abhyanga, Shirodhara, Pinda Sweda y más</p>
-                  <p className="text-emerald-600 font-semibold">Desde 80€</p>
+                  <p className="text-verde-salvia font-semibold">Desde 80€</p>
                 </Card>
                 <Card className="p-6">
-                  <h4 className="font-bold text-lg text-emerald-900 mb-3">Programas de Bienestar</h4>
+                  <h4 className="font-bold text-lg text-gray-900 mb-3">Programas de Bienestar</h4>
                   <p className="text-gray-600 mb-3">Gestión del Estrés, Detox, Rasayana Rejuvenecimiento</p>
-                  <p className="text-emerald-600 font-semibold">Desde 275€</p>
+                  <p className="text-verde-salvia font-semibold">Desde 275€</p>
                 </Card>
               </div>
 
-              <h2 className="text-3xl font-bold text-emerald-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
                 Zonas de Madrid que Atendemos
               </h2>
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -186,38 +186,38 @@ export default function AyurvedaMadridGuia() {
               </p>
               <div className="grid md:grid-cols-3 gap-4 my-8 not-prose">
                 <Card className="p-4 text-center">
-                  <MapPin className="w-6 h-6 text-emerald-600 mx-auto mb-2" />
+                  <MapPin className="w-6 h-6 text-verde-salvia mx-auto mb-2" />
                   <h4 className="font-bold text-gray-900">Pozuelo de Alarcón</h4>
                   <p className="text-sm text-gray-600 mt-1">5 min</p>
                 </Card>
                 <Card className="p-4 text-center">
-                  <MapPin className="w-6 h-6 text-emerald-600 mx-auto mb-2" />
+                  <MapPin className="w-6 h-6 text-verde-salvia mx-auto mb-2" />
                   <h4 className="font-bold text-gray-900">Las Rozas</h4>
                   <p className="text-sm text-gray-600 mt-1">10 min</p>
                 </Card>
                 <Card className="p-4 text-center">
-                  <MapPin className="w-6 h-6 text-emerald-600 mx-auto mb-2" />
+                  <MapPin className="w-6 h-6 text-verde-salvia mx-auto mb-2" />
                   <h4 className="font-bold text-gray-900">Majadahonda</h4>
                   <p className="text-sm text-gray-600 mt-1">10 min</p>
                 </Card>
                 <Card className="p-4 text-center">
-                  <MapPin className="w-6 h-6 text-emerald-600 mx-auto mb-2" />
+                  <MapPin className="w-6 h-6 text-verde-salvia mx-auto mb-2" />
                   <h4 className="font-bold text-gray-900">Madrid Centro</h4>
                   <p className="text-sm text-gray-600 mt-1">20 min</p>
                 </Card>
                 <Card className="p-4 text-center">
-                  <MapPin className="w-6 h-6 text-emerald-600 mx-auto mb-2" />
+                  <MapPin className="w-6 h-6 text-verde-salvia mx-auto mb-2" />
                   <h4 className="font-bold text-gray-900">Aravaca</h4>
                   <p className="text-sm text-gray-600 mt-1">8 min</p>
                 </Card>
                 <Card className="p-4 text-center">
-                  <MapPin className="w-6 h-6 text-emerald-600 mx-auto mb-2" />
+                  <MapPin className="w-6 h-6 text-verde-salvia mx-auto mb-2" />
                   <h4 className="font-bold text-gray-900">Boadilla del Monte</h4>
                   <p className="text-sm text-gray-600 mt-1">12 min</p>
                 </Card>
               </div>
 
-              <h2 className="text-3xl font-bold text-emerald-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
                 Qué Esperar en Tu Primera Consulta de Ayurveda en Madrid
               </h2>
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -235,7 +235,7 @@ export default function AyurvedaMadridGuia() {
                 <Image src="/images/hero-ayurveda.jpg" alt="Centro Ayurveda Madrid - Consultas" width={1200} height={600} className="w-full h-auto brightness-105 contrast-110 saturate-110" />
               </div>
 
-              <h2 className="text-3xl font-bold text-emerald-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">
                 Opiniones sobre Ayurveda Madrid
               </h2>
               <div className="space-y-4 not-prose my-8">
@@ -245,7 +245,7 @@ export default function AyurvedaMadridGuia() {
                       <p className="text-gray-700 italic mb-3">
                         "Después de años buscando soluciones para mi ansiedad y problemas digestivos, encontré en Harit Ayurveda el enfoque integral que necesitaba. Pilar es una profesional excepcional."
                       </p>
-                      <p className="font-semibold text-emerald-900">— María G., Madrid Centro</p>
+                      <p className="font-semibold text-gray-900">— María G., Madrid Centro</p>
                     </div>
                   </div>
                 </Card>
@@ -255,7 +255,7 @@ export default function AyurvedaMadridGuia() {
                       <p className="text-gray-700 italic mb-3">
                         "Llevo 3 años visitando el centro. Los tratamientos son increíbles y siempre salgo renovada. Muy recomendable para quien busque bienestar auténtico."
                       </p>
-                      <p className="font-semibold text-emerald-900">— Laura S., Pozuelo de Alarcón</p>
+                      <p className="font-semibold text-gray-900">— Laura S., Pozuelo de Alarcón</p>
                     </div>
                   </div>
                 </Card>
@@ -263,14 +263,14 @@ export default function AyurvedaMadridGuia() {
             </div>
 
             {/* CTA */}
-            <Card className="p-10 mt-12 bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-center">
+            <Card className="p-10 mt-12 bg-verde-salvia text-white text-center">
               <h2 className="text-3xl font-bold mb-4">Reserva Tu Consulta en Madrid</h2>
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
                 Descubre cómo el Ayurveda puede transformar tu salud. Primera consulta disponible presencial u online.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link href="/consultas">
-                  <Button size="lg" className="bg-white text-emerald-600 hover:bg-emerald-50">
+                  <Button size="lg" variant="hero">
                     Reservar Consulta
                   </Button>
                 </Link>

@@ -66,14 +66,14 @@ export default function GestionDelEstresPage() {
               className="object-cover brightness-50"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-background" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/25" />
           </div>
 
           <div className="container-width relative z-10 text-center px-4">
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/20 backdrop-blur-sm rounded-full mb-6 border border-emerald-300/30">
-                <Sparkles className="w-4 h-4 text-emerald-300" />
-                <span className="text-emerald-100 font-semibold text-sm uppercase tracking-wider">Programa Certificado</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-transparent rounded-full mb-6 border border-white/50">
+                <Sparkles className="w-4 h-4 text-white" />
+                <span className="text-white font-semibold text-sm uppercase tracking-wider">Programa Certificado</span>
               </div>
               
               <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6 leading-tight">Gestión del Estrés</h1>
@@ -83,7 +83,7 @@ export default function GestionDelEstresPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button size="lg" className="text-lg px-8 py-6">Primera Consulta - 121€</Button>
+                <Button size="lg" className="text-lg px-8 py-6 bg-verde-salvia hover:bg-verde-salvia/90 text-white">Primera Consulta - 121€</Button>
               </div>
             </motion.div>
           </div>
@@ -105,7 +105,7 @@ export default function GestionDelEstresPage() {
                   El <strong>estrés en España</strong> puede ser causado por múltiples factores y termina llevándonos a <strong>trastornos crónicos</strong> como hipertensión, afecciones cardiacas, asma, problemas de piel, obesidad.
                 </p>
 
-                <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-lg my-8">
+                <div className="bg-verde-salvia/10 border-l-4 border-verde-salvia p-6 rounded-r-lg my-8">
                   <p className="text-gray-800 text-lg italic">
                     El <strong>Programa Gestión del Estrés de Harit Ayurveda en España</strong> te brinda un enfoque integral y natural para aprender a gestionar y reducir el estrés.
                   </p>
@@ -149,7 +149,7 @@ export default function GestionDelEstresPage() {
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Card className="h-full border-emerald-100 hover:border-emerald-300 hover:shadow-xl transition-all">
                     <CardContent className="p-6">
-                      <div className="w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mb-4">
+                      <div className="w-14 h-14 bg-verde-salvia rounded-2xl flex items-center justify-center mb-4">
                         <benefit.icon className="w-7 h-7 text-white" />
                       </div>
                       <p className="text-gray-800 text-lg font-medium">{benefit.text}</p>
@@ -188,7 +188,7 @@ export default function GestionDelEstresPage() {
           </div>
         </section>
 
-        <section className="py-20 bg-gradient-to-br from-emerald-600 to-teal-700 relative">
+        <section className="py-20 bg-verde-salvia relative">
           <div className="container-width px-4 relative z-10">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center max-w-4xl mx-auto">
               <h2 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6">¿Cómo empezar?</h2>
@@ -200,7 +200,7 @@ export default function GestionDelEstresPage() {
                 <div className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6">121€</div>
                 <div className="text-emerald-100 text-lg mb-4">Primera Consulta Ayurvédica</div>
                 <div className="text-sm text-emerald-200 mb-6">*Esta cantidad se restará del programa completo</div>
-                <Button size="lg" variant="secondary" className="text-lg px-10 py-6">Reservar Primera Consulta</Button>
+                <Button size="lg" variant="hero" className="text-lg px-10 py-6">Reservar Primera Consulta</Button>
               </div>
             </motion.div>
           </div>

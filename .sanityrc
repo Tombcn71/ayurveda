@@ -1,0 +1,11 @@
+{
+  "root": true,
+  "project": {
+    "name": "ayurveda-salud"
+  },
+  "api": {
+    "projectId": "",
+    "dataset": "production"
+  }
+}
+

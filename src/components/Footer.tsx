@@ -22,7 +22,7 @@ const footerLinks = {
 
 export const Footer = () => {
   return (
-    <footer className="bg-forest text-cream">
+    <footer className="bg-verde-salvia text-cream">
       <div className="container-width section-padding pb-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}

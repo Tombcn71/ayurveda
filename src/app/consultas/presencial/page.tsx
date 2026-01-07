@@ -83,14 +83,14 @@ export default function ConsultasPresencialPage() {
               className="object-cover brightness-50"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-background" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/30" />
           </div>
 
           <div className="container-width relative z-10 text-center px-4">
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-              <div className="inline-flex items-center gap-2 px-3 sm:px-5 py-2 bg-emerald-500/20 backdrop-blur-sm rounded-full mb-4 sm:mb-6 border border-emerald-300/30">
-                <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-emerald-300" />
-                <span className="text-emerald-100 font-semibold text-xs sm:text-sm uppercase tracking-wider">Consultas Presenciales</span>
+              <div className="inline-flex items-center gap-2 px-3 sm:px-5 py-2 bg-transparent rounded-full mb-4 sm:mb-6 border border-white/50">
+                <MapPin className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
+                <span className="text-white font-semibold text-xs sm:text-sm uppercase tracking-wider">Consultas Presenciales</span>
               </div>
               
               <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6 sm:mb-6 leading-tight px-2">
@@ -102,7 +102,7 @@ export default function ConsultasPresencialPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center w-full max-w-2xl mx-auto px-4">
-                <Button size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-emerald-600 hover:bg-emerald-700 w-full sm:w-auto">
+                <Button size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-verde-salvia hover:bg-verde-salvia/90 text-white w-full sm:w-auto">
                   <Calendar className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                   Reservar Consulta Presencial
                 </Button>
@@ -125,7 +125,7 @@ export default function ConsultasPresencialPage() {
                   En la <strong>primera consulta presencial de Ayurveda en España</strong> se realiza una <strong>evaluación completa de tu salud</strong>. Rellenas un cuestionario con tu historial incluyendo alimentación, ejercicio, descanso, gustos, preferencias y se utilizan Técnicas ayurvédicas de diagnóstico.
                 </p>
 
-                <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-lg my-8">
+                <div className="bg-verde-salvia/10 border-l-4 border-verde-salvia p-6 rounded-r-lg my-8">
                   <p className="text-gray-800 text-lg">
                     La más importante de estas técnicas es la <strong>lectura o valoración del pulso ayurvédico -Nadi Vigyam-</strong> que ofrece muchos beneficios para la salud, nos ayuda a conocer el grado de equilibrio cuerpo-mente y a detectar cualquier desequilibrio, aunque no se haya manifestado como enfermedad.
                   </p>
@@ -152,7 +152,7 @@ export default function ConsultasPresencialPage() {
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
                   <Card className="h-full border-emerald-100 hover:border-emerald-300 hover:shadow-xl transition-all">
                     <CardContent className="p-6">
-                      <div className="w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mb-4">
+                      <div className="w-14 h-14 bg-verde-salvia rounded-2xl flex items-center justify-center mb-4">
                         <item.icon className="w-7 h-7 text-white" />
                       </div>
                       <h3 className="font-semibold text-xl text-gray-900 mb-2">{item.title}</h3>
@@ -164,7 +164,7 @@ export default function ConsultasPresencialPage() {
             </div>
 
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mt-12">
-              <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-3xl p-10 border-2 border-emerald-200 max-w-3xl mx-auto">
+              <div className="bg-verde-salvia/10 rounded-3xl p-10 border-2 border-verde-salvia/30 max-w-3xl mx-auto">
                 <p className="text-xl text-gray-800 leading-relaxed">
                   Las consultas presenciales están enfocadas en <strong>enseñarte a comprender cómo cuidar de ti mismo</strong>, de modo que no te hagas dependiente del Centro. Nuestra meta es hacer a cada persona <strong>responsable de su propia salud</strong>.
                 </p>
@@ -197,7 +197,7 @@ export default function ConsultasPresencialPage() {
                     El <strong>Ayurveda en España</strong> se diferencia de la medicina occidental convencional en que reconoce a cada individuo como un ser único en la naturaleza y tiene en cuenta los desequilibrios que se van acumulando día a día. Y lo reconoce a partir de un único punto de referencia… <strong>el pulso</strong>.
                   </p>
 
-                  <div className="bg-emerald-50 rounded-xl p-6 border-l-4 border-emerald-500">
+                  <div className="bg-verde-salvia/10 rounded-xl p-6 border-l-4 border-verde-salvia">
                     <h3 className="font-semibold text-emerald-900 mb-3">Evaluación del Pulso Ayurvédico</h3>
                     <p>
                       La <strong>lectura del pulso ayurvédico</strong> es la herramienta que permite evaluar al experto entrenado en Ayurveda, el estado de equilibrio y actividad en el nivel fundamental de la inteligencia biológica. El enfoque está en identificar desequilibrios antes de que se manifiesten como enfermedad.
@@ -240,7 +240,7 @@ export default function ConsultasPresencialPage() {
           </div>
         </section>
 
-        <section className="py-20 bg-gradient-to-br from-emerald-600 to-teal-700 relative">
+        <section className="py-20 bg-verde-salvia relative">
           <div className="absolute inset-0 opacity-10">
             <Image
               src="https://images.unsplash.com/photo-1447452001602-7090c7ab2db3?w=1920&q=80"
@@ -303,7 +303,7 @@ export default function ConsultasPresencialPage() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <Button size="lg" variant="secondary" className="text-lg px-10 py-6 w-full sm:w-auto">
+                <Button size="lg" variant="hero" className="text-lg px-10 py-6 w-full sm:w-auto">
                   <Calendar className="w-5 h-5 mr-2" />
                   Reservar Consulta Presencial
                 </Button>

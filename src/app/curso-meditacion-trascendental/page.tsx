@@ -98,14 +98,14 @@ export default function CursoMeditacionPage() {
               className="object-cover brightness-50"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-emerald-900/60 via-indigo-900/40 to-background" />
+            <div className="absolute inset-0 bg-gradient-to-b from-emerald-900/60 via-indigo-900/40 to-black/40" />
           </div>
 
           <div className="container-width relative z-10 text-center px-4">
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-              <div className="inline-flex items-center gap-2 px-5 py-2 bg-emerald-500/20 backdrop-blur-sm rounded-full mb-6 border border-emerald-300/30">
-                <Sparkles className="w-4 h-4 text-emerald-300" />
-                <span className="text-emerald-100 font-semibold text-sm uppercase tracking-wider">Curso Certificado</span>
+              <div className="inline-flex items-center gap-2 px-5 py-2 bg-transparent rounded-full mb-6 border border-white/50">
+                <Sparkles className="w-4 h-4 text-white" />
+                <span className="text-white font-semibold text-sm uppercase tracking-wider">Curso Certificado</span>
               </div>
               
               <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6 leading-tight">
@@ -116,12 +116,12 @@ export default function CursoMeditacionPage() {
                 Aprende la técnica en 4 sesiones con Pilar Franco de Sarabia
               </p>
               
-              <p className="text-lg text-emerald-100 mb-8">
+              <p className="text-lg text-white mb-8">
                 Madrid, España • 6 meses de seguimiento incluido
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button size="lg" className="text-lg px-8 py-6 bg-emerald-600 hover:bg-emerald-700">
+                <Button size="lg" className="text-lg px-8 py-6 bg-verde-salvia hover:bg-verde-salvia/90 text-white">
                   <Calendar className="w-5 h-5 mr-2" />
                   Inscríbete al Curso
                 </Button>
@@ -148,7 +148,7 @@ export default function CursoMeditacionPage() {
                   La técnica de la <strong>Meditación Trascendental en Madrid</strong> se aprende fácilmente en un <strong>curso de siete pasos</strong> enseñado por profesores cualificados. El Curso continúa durante <strong>6 meses de seguimiento regular</strong> de las experiencias por parte del profesor en sesiones de chequeo y de charlas avanzadas con meditación en grupo.
                 </p>
 
-                <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-lg my-8">
+                <div className="bg-verde-salvia/10 border-l-4 border-verde-salvia p-6 rounded-r-lg my-8">
                   <p className="text-gray-800 text-lg">
                     Para obtener los múltiples beneficios de la meditación sólo es necesario ser <strong>regular en la práctica</strong> en casa o cualquier lugar que sea suficientemente confortable.
                   </p>
@@ -162,9 +162,9 @@ export default function CursoMeditacionPage() {
               <div className="grid md:grid-cols-3 gap-6 mt-12">
                 {benefits.map((benefit, index) => (
                   <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
-                    <Card className="border-emerald-100 hover:border-emerald-300 hover:shadow-lg transition-all text-center">
+                    <Card className="border-verde-salvia/30 hover:border-verde-salvia hover:shadow-lg transition-all text-center">
                       <CardContent className="p-6">
-                        <benefit.icon className="w-12 h-12 text-emerald-600 mx-auto mb-3" />
+                        <benefit.icon className="w-12 h-12 text-verde-salvia mx-auto mb-3" />
                         <p className="text-gray-800 font-medium">{benefit.text}</p>
                       </CardContent>
                     </Card>
@@ -187,14 +187,14 @@ export default function CursoMeditacionPage() {
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {cursoSteps.map((step, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
-                  <Card className="h-full border-emerald-100 hover:border-emerald-300 hover:shadow-xl transition-all">
+                  <Card className="h-full border-verde-salvia/30 hover:border-verde-salvia hover:shadow-xl transition-all">
                     <CardContent className="p-8">
                       <div className="flex items-center gap-3 mb-4">
-                        <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">
+                        <div className="w-12 h-12 bg-verde-salvia rounded-xl flex items-center justify-center text-white font-bold text-xl">
                           {index + 1}
                         </div>
                         <div>
-                          <p className="text-sm text-emerald-600 font-semibold">{step.day}</p>
+                          <p className="text-sm text-verde-salvia font-semibold">{step.day}</p>
                           <h3 className="font-serif text-xl text-gray-900">{step.title}</h3>
                         </div>
                       </div>
@@ -210,8 +210,8 @@ export default function CursoMeditacionPage() {
             </div>
 
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-12 text-center">
-              <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-3xl p-10 border-2 border-emerald-200 max-w-3xl mx-auto">
-                <Users className="w-12 h-12 text-emerald-600 mx-auto mb-4" />
+              <div className="bg-verde-salvia/10 rounded-3xl p-10 border-2 border-verde-salvia/30 max-w-3xl mx-auto">
+                <Users className="w-12 h-12 text-verde-salvia mx-auto mb-4" />
                 <p className="text-xl text-gray-800 leading-relaxed mb-2">
                   <strong>Grupos reducidos de 3 a 6 personas</strong>
                 </p>
@@ -237,15 +237,15 @@ export default function CursoMeditacionPage() {
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
               {pricing.map((tier, index) => (
                 <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }}>
-                  <Card className={`h-full ${tier.featured ? 'border-emerald-400 shadow-xl ring-2 ring-indigo-400' : 'border-emerald-100'} hover:shadow-xl transition-all`}>
+                  <Card className={`h-full ${tier.featured ? 'border-verde-salvia shadow-xl ring-2 ring-verde-salvia/50' : 'border-verde-salvia/30'} hover:shadow-xl transition-all`}>
                     <CardContent className="p-8 text-center">
                       {tier.featured && (
-                        <div className="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-semibold mb-4">
+                        <div className="inline-block px-3 py-1 bg-verde-salvia/20 text-verde-salvia rounded-full text-xs font-semibold mb-4">
                           Más común
                         </div>
                       )}
                       <p className="text-gray-600 mb-2">{tier.range}</p>
-                      <div className="text-5xl font-bold text-emerald-600 mb-2">{tier.price}</div>
+                      <div className="text-5xl font-bold text-verde-salvia mb-2">{tier.price}</div>
                       <p className="text-sm text-gray-600">{tier.description}</p>
                     </CardContent>
                   </Card>
@@ -254,23 +254,23 @@ export default function CursoMeditacionPage() {
             </div>
 
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center">
-              <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-3xl p-10 border-2 border-emerald-200 max-w-4xl mx-auto">
+              <div className="bg-verde-salvia/10 rounded-3xl p-10 border-2 border-verde-salvia/30 max-w-4xl mx-auto">
                 <h3 className="font-serif text-2xl text-gray-900 mb-4">Qué incluye la cuota</h3>
                 <ul className="space-y-2 text-gray-700 text-lg">
                   <li className="flex items-center justify-center gap-2">
-                    <span className="text-emerald-500">✓</span>
+                    <span className="text-verde-salvia">✓</span>
                     <span>Instrucción personalizada</span>
                   </li>
                   <li className="flex items-center justify-center gap-2">
-                    <span className="text-emerald-500">✓</span>
+                    <span className="text-verde-salvia">✓</span>
                     <span>4 sesiones consecutivas</span>
                   </li>
                   <li className="flex items-center justify-center gap-2">
-                    <span className="text-emerald-500">✓</span>
+                    <span className="text-verde-salvia">✓</span>
                     <span><strong>6 meses de seguimiento</strong> con meditación en grupo mensual</span>
                   </li>
                   <li className="flex items-center justify-center gap-2">
-                    <span className="text-emerald-500">✓</span>
+                    <span className="text-verde-salvia">✓</span>
                     <span>Charla gratuita online preparatoria</span>
                   </li>
                 </ul>
@@ -279,7 +279,7 @@ export default function CursoMeditacionPage() {
           </div>
         </section>
 
-        <section className="py-20 bg-gradient-to-br from-emerald-600 to-teal-700 relative">
+        <section className="py-20 bg-verde-salvia relative">
           <div className="absolute inset-0 opacity-10">
             <Image
               src="https://images.unsplash.com/photo-1528715471579-d1bcf0ba5e83?w=1920&q=80"
@@ -328,11 +328,11 @@ export default function CursoMeditacionPage() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <Button size="lg" variant="secondary" className="text-lg px-10 py-6">
+                <Button size="lg" variant="hero" className="text-lg px-10 py-6">
                   <Phone className="w-5 h-5 mr-2" />
                   Llamar Ahora
                 </Button>
-                <Button size="lg" variant="secondary" className="text-lg px-10 py-6">
+                <Button size="lg" variant="hero" className="text-lg px-10 py-6">
                   <Video className="w-5 h-5 mr-2" />
                   Inscríbete a Charla Gratuita
                 </Button>

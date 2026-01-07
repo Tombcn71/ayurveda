@@ -12,13 +12,16 @@ export const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-ayurveda.jpg"
+          src="/images/descarga (25).jpeg"
           alt="Ayurveda wellness herbs and natural ingredients"
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-forest/90 via-primary/80 to-primary/60" />
+        {/* Sunlight effect - lighter from top */}
+        <div className="absolute inset-0 bg-gradient-to-b from-crema/20 via-verde-salvia/10 to-verde-oscuro/15" />
+        {/* Subtle warm overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-crema/5 to-transparent" />
       </div>
 
       {/* Decorative Elements */}
@@ -37,8 +40,7 @@ export const HeroSection = () => {
             >
               <span className="inline-flex items-center gap-2 px-4 py-2 bg-cream/10 backdrop-blur-sm rounded-full text-cream/90 text-sm font-medium mb-4 lg:mb-6">
                 <span className="w-2 h-2 bg-gold rounded-full animate-pulse" />
-                Medicina Tradicional India
-              </span>
+Mas de 20 años de experiencia </span>
             </motion.div>
 
             <motion.h1
@@ -47,9 +49,7 @@ export const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-cream leading-tight mb-4 lg:mb-6"
             >
-              El Arte Milenario
-              <br />
-              <span className="text-gradient-gold">del Bienestar</span>
+              Ayurveda para tu equilibrio
             </motion.h1>
 
             <motion.p
@@ -58,8 +58,7 @@ export const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-cream/85 text-base sm:text-lg lg:text-xl leading-relaxed mb-6 lg:mb-10 max-w-2xl"
             >
-              Descubre el equilibrio perfecto entre cuerpo, mente y espíritu a través
-              de la sabiduría ancestral del Ayurveda.
+              Descubre la sabiduría milenaria del Ayurveda combinada con ciencia moderna para recuperar tu bienestar natural.
             </motion.p>
 
             {/* Mobile Quiz - Shows after subtitle on mobile */}
@@ -79,19 +78,9 @@ export const HeroSection = () => {
               className="hidden lg:flex flex-wrap gap-4"
             >
               <Button variant="hero" size="lg" className="group">
-                Reservar Consulta
-                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+              Reserva tu consulta online                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Button>
-              <Button
-                variant="ghost"
-                size="lg"
-                className="text-cream hover:bg-cream/10 hover:text-cream gap-3"
-              >
-                <div className="w-10 h-10 rounded-full bg-cream/20 flex items-center justify-center">
-                  <Play className="w-4 h-4 fill-current" />
-                </div>
-                Ver Video
-              </Button>
+              
             </motion.div>
 
             {/* Stats */}

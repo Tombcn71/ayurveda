@@ -32,19 +32,19 @@ export default function DoshasGuia() {
         {/* Hero */}
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
           <Image src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=1920&q=80" alt="Los tres doshas ayurvédicos" fill className="object-cover" priority />
-          <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/90 to-teal-900/70" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/40" />
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-            <Badge className="mb-4 bg-emerald-500/20 text-emerald-100 border-emerald-400/30">Guía Completa</Badge>
+            <Badge className="mb-4 bg-verde-salvia/20 text-white border-verde-salvia/30">Guía Completa</Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Los Tres Doshas</h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-emerald-100 max-w-3xl mx-auto">Vata, Pitta y Kapha: Descubre tu constitución única</p>
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white max-w-3xl mx-auto">Vata, Pitta y Kapha: Descubre tu constitución única</p>
           </div>
         </section>
 
-        <div className="bg-gradient-to-br from-emerald-50 to-teal-50">
+        <div className="bg-background">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             {/* Quick Intro */}
-            <Card className="p-8 mb-12 border-l-4 border-emerald-600 bg-white">
-              <h2 className="text-2xl font-bold text-emerald-900 mb-4">¿Qué son los Doshas?</h2>
+            <Card className="p-8 mb-12 border-l-4 border-verde-salvia bg-white">
+              <h2 className="text-2xl font-bold text-foreground mb-4">¿Qué son los Doshas?</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Los <strong>doshas</strong> son las tres energías bio-físicas fundamentales del Ayurveda: <strong>Vata, Pitta y Kapha</strong>. Cada persona tiene una combinación única de estos doshas que determina su constitución física, mental y emocional. Conocer tu dosha dominante es el primer paso para personalizar tu dieta, rutina y tratamientos ayurvédicos.
               </p>
@@ -142,13 +142,13 @@ export default function DoshasGuia() {
             </div>
 
             {/* CTA */}
-            <Card className="p-10 mt-12 bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-center">
+            <Card className="p-10 mt-12 bg-verde-salvia text-white text-center">
               <h2 className="text-3xl font-bold mb-4">Descubre Tu Dosha</h2>
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
                 Una consulta ayurvédica determinará tu constitución única y cómo equilibrar tus doshas
               </p>
               <Link href="/consultas">
-                <Button size="lg" className="bg-white text-emerald-600 hover:bg-emerald-50">
+                <Button size="lg" variant="hero" className="bg-cream text-forest hover:bg-cream/90">
                   Reservar Consulta
                 </Button>
               </Link>

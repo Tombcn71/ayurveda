@@ -17,8 +17,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ['"Cormorant Garamond"', 'serif'],
-        sans: ['"Nunito Sans"', 'sans-serif'],
+        sans: ['Poppins', 'sans-serif'],
+        serif: ['Poppins', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -57,6 +57,7 @@ export default {
         sage: {
           DEFAULT: "hsl(var(--sage))",
           light: "hsl(var(--sage-light))",
+          dark: "hsl(var(--sage-dark))",
         },
         forest: "hsl(var(--forest))",
         gold: {
@@ -65,6 +66,16 @@ export default {
         },
         cream: "hsl(var(--cream))",
         terracotta: "hsl(var(--terracotta))",
+        lilac: {
+          DEFAULT: "hsl(var(--lilac))",
+          light: "hsl(var(--lilac-light))",
+        },
+        lavender: "hsl(var(--lavender))",
+        amber: "hsl(var(--amber))",
+        "verde-salvia": "#8B9A6B",
+        "verde-oscuro": "#2D3B2D",
+        "lila-suave": "#B8A9C9",
+        "crema": "#F5F3EF",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -85,6 +96,7 @@ export default {
         soft: "var(--shadow-soft)",
         elevated: "var(--shadow-elevated)",
         gold: "var(--shadow-gold)",
+        card: "var(--shadow-card)",
       },
       keyframes: {
         "accordion-down": {

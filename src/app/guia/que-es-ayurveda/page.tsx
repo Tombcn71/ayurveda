@@ -107,20 +107,20 @@ export default function QueEsAyurvedaGuia() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/90 to-teal-900/70" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/40" />
           
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-            <Badge className="mb-4 bg-emerald-500/20 text-emerald-100 border-emerald-400/30">
+            <Badge className="mb-4 bg-transparent text-white border-white/50">
               <BookOpen className="w-4 h-4 mr-2" />
               Guía Completa
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Qué es Ayurveda
             </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-emerald-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
               La ciencia milenaria de la vida para tu salud y bienestar en el mundo moderno
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-emerald-200">
+            <div className="flex flex-wrap justify-center gap-4 text-sm text-white/80">
               <span>•</span>
                 <Clock className="w-4 h-4" />
                 15 min lectura
@@ -131,28 +131,28 @@ export default function QueEsAyurvedaGuia() {
         </section>
 
         {/* Main Content */}
-        <div className="bg-gradient-to-br from-emerald-50 to-teal-50">
+        <div className="bg-background">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             {/* Quick Summary */}
-            <Card className="p-8 mb-12 border-l-4 border-emerald-600 bg-white">
-              <h2 className="text-2xl font-bold text-emerald-900 mb-4 flex items-center gap-2">
-                <Sparkles className="w-6 h-6 text-emerald-600" />
+            <Card className="p-8 mb-12 border-l-4 border-verde-salvia bg-white">
+              <h2 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-2">
+                <Sparkles className="w-6 h-6 text-verde-salvia" />
                 Resumen Rápido
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 El <strong>Ayurveda</strong> es un sistema médico holístico con más de 5000 años de antigüedad que se centra en la prevención y el tratamiento de enfermedades a través del equilibrio entre cuerpo, mente y espíritu. Reconocido por la OMS, el Ayurveda utiliza remedios naturales, alimentación, yoga, meditación y tratamientos específicos para restaurar la salud.
               </p>
               <div className="grid md:grid-cols-3 gap-4 mt-6">
-                <div className="text-center p-4 bg-emerald-50 rounded-lg">
-                  <div className="text-3xl font-bold text-emerald-600 mb-1">5000+</div>
+                <div className="text-center p-4 bg-verde-salvia/10 rounded-lg">
+                  <div className="text-3xl font-bold text-verde-salvia mb-1">5000+</div>
                   <div className="text-sm text-gray-600">Años de Historia</div>
                 </div>
-                <div className="text-center p-4 bg-teal-50 rounded-lg">
-                  <div className="text-3xl font-bold text-teal-600 mb-1">3</div>
+                <div className="text-center p-4 bg-verde-salvia/10 rounded-lg">
+                  <div className="text-3xl font-bold text-verde-salvia mb-1">3</div>
                   <div className="text-sm text-gray-600">Doshas Principales</div>
                 </div>
-                <div className="text-center p-4 bg-emerald-50 rounded-lg">
-                  <div className="text-3xl font-bold text-emerald-600 mb-1">100%</div>
+                <div className="text-center p-4 bg-verde-salvia/10 rounded-lg">
+                  <div className="text-3xl font-bold text-verde-salvia mb-1">100%</div>
                   <div className="text-sm text-gray-600">Natural</div>
                 </div>
               </div>
@@ -161,7 +161,7 @@ export default function QueEsAyurvedaGuia() {
             {/* Content Sections */}
             <div className="prose prose-lg max-w-none">
               {/* Sección 1 */}
-              <h2 className="text-3xl font-bold text-emerald-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
                 ¿Qué Significa Ayurveda?
               </h2>
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -182,7 +182,7 @@ export default function QueEsAyurvedaGuia() {
                 />
               </div>
 
-              <h2 className="text-3xl font-bold text-emerald-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
                 Orígenes e Historia del Ayurveda
               </h2>
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -197,10 +197,10 @@ export default function QueEsAyurvedaGuia() {
                 <li><strong>Ashtanga Hridaya</strong>: Compendio conciso de los principios ayurvédicos</li>
               </ul>
 
-              <h2 className="text-3xl font-bold text-emerald-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
                 Los Principios Fundamentales del Ayurveda
               </h2>
-              <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-4">
+              <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">
                 Los Cinco Elementos (Panchamahabhuta)
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -208,28 +208,28 @@ export default function QueEsAyurvedaGuia() {
               </p>
               <div className="grid md:grid-cols-2 gap-6 my-8">
                 <Card className="p-6 hover:shadow-lg transition-shadow">
-                  <h4 className="font-bold text-lg text-emerald-900 mb-2">🌪️ Éter (Akasha)</h4>
+                  <h4 className="font-bold text-lg text-foreground mb-2">🌪️ Éter (Akasha)</h4>
                   <p className="text-gray-600">El espacio, la expansión. Representa las cavidades del cuerpo.</p>
                 </Card>
                 <Card className="p-6 hover:shadow-lg transition-shadow">
-                  <h4 className="font-bold text-lg text-emerald-900 mb-2">💨 Aire (Vayu)</h4>
+                  <h4 className="font-bold text-lg text-foreground mb-2">💨 Aire (Vayu)</h4>
                   <p className="text-gray-600">El movimiento. Representa el sistema nervioso y la respiración.</p>
                 </Card>
                 <Card className="p-6 hover:shadow-lg transition-shadow">
-                  <h4 className="font-bold text-lg text-emerald-900 mb-2">🔥 Fuego (Agni)</h4>
+                  <h4 className="font-bold text-lg text-foreground mb-2">🔥 Fuego (Agni)</h4>
                   <p className="text-gray-600">La transformación. Representa la digestión y el metabolismo.</p>
                 </Card>
                 <Card className="p-6 hover:shadow-lg transition-shadow">
-                  <h4 className="font-bold text-lg text-emerald-900 mb-2">💧 Agua (Jala)</h4>
+                  <h4 className="font-bold text-lg text-foreground mb-2">💧 Agua (Jala)</h4>
                   <p className="text-gray-600">La cohesión. Representa los fluidos corporales.</p>
                 </Card>
                 <Card className="p-6 hover:shadow-lg transition-shadow md:col-span-2">
-                  <h4 className="font-bold text-lg text-emerald-900 mb-2">🌍 Tierra (Prithvi)</h4>
+                  <h4 className="font-bold text-lg text-foreground mb-2">🌍 Tierra (Prithvi)</h4>
                   <p className="text-gray-600">La estructura. Representa huesos, músculos y tejidos.</p>
                 </Card>
               </div>
 
-              <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-4">
+              <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">
                 Los Tres Doshas: Tu Constitución Única
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -300,7 +300,7 @@ export default function QueEsAyurvedaGuia() {
                 </Card>
               </div>
 
-              <h2 className="text-3xl font-bold text-emerald-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
                 Beneficios del Ayurveda en el Mundo Moderno
               </h2>
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -309,19 +309,19 @@ export default function QueEsAyurvedaGuia() {
 
               <div className="grid md:grid-cols-2 gap-6 my-8">
                 <Card className="p-6">
-                  <h4 className="font-bold text-lg text-emerald-900 mb-3">✓ Enfoque Preventivo</h4>
+                  <h4 className="font-bold text-lg text-foreground mb-3">✓ Enfoque Preventivo</h4>
                   <p className="text-gray-600">Previene enfermedades antes de que aparezcan mediante el equilibrio de los doshas</p>
                 </Card>
                 <Card className="p-6">
-                  <h4 className="font-bold text-lg text-emerald-900 mb-3">✓ Tratamiento Personalizado</h4>
+                  <h4 className="font-bold text-lg text-foreground mb-3">✓ Tratamiento Personalizado</h4>
                   <p className="text-gray-600">Reconoce que cada persona es única y requiere un plan individual</p>
                 </Card>
                 <Card className="p-6">
-                  <h4 className="font-bold text-lg text-emerald-900 mb-3">✓ Sin Efectos Secundarios</h4>
+                  <h4 className="font-bold text-lg text-foreground mb-3">✓ Sin Efectos Secundarios</h4>
                   <p className="text-gray-600">Utiliza remedios naturales y cambios en el estilo de vida</p>
                 </Card>
                 <Card className="p-6">
-                  <h4 className="font-bold text-lg text-emerald-900 mb-3">✓ Salud Integral</h4>
+                  <h4 className="font-bold text-lg text-foreground mb-3">✓ Salud Integral</h4>
                   <p className="text-gray-600">Trata cuerpo, mente y espíritu como un todo interconectado</p>
                 </Card>
               </div>
@@ -337,17 +337,17 @@ export default function QueEsAyurvedaGuia() {
                 />
               </div>
 
-              <h2 className="text-3xl font-bold text-emerald-900 mt-12 mb-6">
+              <h2 className="text-3xl font-bold text-foreground mt-12 mb-6">
                 Aplicaciones Prácticas del Ayurveda
               </h2>
-              <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-4">
+              <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">
                 Alimentación Ayurvédica
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
                 La dieta es uno de los pilares fundamentales del Ayurveda. No se trata solo de <em>qué</em> comes, sino también de <em>cómo</em>, <em>cuándo</em> y <em>por qué</em> comes. El Ayurveda clasifica los alimentos según su efecto en los doshas y recomienda una dieta personalizada basada en tu constitución única.
               </p>
 
-              <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-4">
+              <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">
                 Rutinas Diarias (Dinacharya)
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -362,7 +362,7 @@ export default function QueEsAyurvedaGuia() {
                 <li>Descanso adecuado</li>
               </ul>
 
-              <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-4">
+              <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">
                 Tratamientos Ayurvédicos
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
@@ -371,8 +371,8 @@ export default function QueEsAyurvedaGuia() {
             </div>
 
             {/* FAQ Section */}
-            <Card className="p-8 my-12 bg-gradient-to-br from-emerald-50 to-teal-50">
-              <h2 className="text-3xl font-bold text-emerald-900 mb-6">
+            <Card className="p-8 my-12 bg-verde-salvia/10">
+              <h2 className="text-3xl font-bold text-foreground mb-6">
                 Preguntas Frecuentes sobre Ayurveda
               </h2>
               <Accordion type="single" collapsible className="w-full">
@@ -433,16 +433,16 @@ export default function QueEsAyurvedaGuia() {
             </Card>
 
             {/* CTA Section */}
-            <Card className="p-10 my-12 bg-gradient-to-r from-emerald-600 to-teal-600 text-white text-center">
+            <Card className="p-10 my-12 bg-verde-salvia text-white text-center">
               <h2 className="text-3xl font-bold mb-4">
                 ¿Listo para Experimentar el Ayurveda?
               </h2>
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-emerald-100 mb-8 max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
                 Descubre tu constitución única y cómo el Ayurveda puede transformar tu salud y bienestar con una consulta personalizada.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 <Link href="/consultas">
-                  <Button size="lg" className="bg-white text-emerald-600 hover:bg-emerald-50">
+                  <Button size="lg" variant="hero" className="bg-cream text-forest hover:bg-cream/90">
                     Reservar Consulta
                   </Button>
                 </Link>
@@ -456,23 +456,23 @@ export default function QueEsAyurvedaGuia() {
 
             {/* Related Guides */}
             <div className="mt-16">
-              <h2 className="text-3xl font-bold text-emerald-900 mb-8">Explora Más Guías</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-8">Explora Más Guías</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 <Link href="/guia/doshas">
                   <Card className="p-6 hover:shadow-xl transition-shadow h-full">
-                    <h3 className="font-bold text-lg text-emerald-900 mb-2">Los Doshas</h3>
+                    <h3 className="font-bold text-lg text-foreground mb-2">Los Doshas</h3>
                     <p className="text-gray-600">Guía completa sobre Vata, Pitta y Kapha</p>
                   </Card>
                 </Link>
                 <Link href="/guia/tratamientos-ayurveda">
                   <Card className="p-6 hover:shadow-xl transition-shadow h-full">
-                    <h3 className="font-bold text-lg text-emerald-900 mb-2">Tratamientos</h3>
+                    <h3 className="font-bold text-lg text-foreground mb-2">Tratamientos</h3>
                     <p className="text-gray-600">Descubre los tratamientos ayurvédicos</p>
                   </Card>
                 </Link>
                 <Link href="/guia/alimentacion-ayurvedica">
                   <Card className="p-6 hover:shadow-xl transition-shadow h-full">
-                    <h3 className="font-bold text-lg text-emerald-900 mb-2">Alimentación</h3>
+                    <h3 className="font-bold text-lg text-foreground mb-2">Alimentación</h3>
                     <p className="text-gray-600">La dieta ayurvédica explicada</p>
                   </Card>
                 </Link>
