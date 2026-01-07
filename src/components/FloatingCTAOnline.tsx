@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { Calendar } from "lucide-react";
+import { Video } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export function FloatingCTA() {
+export function FloatingCTAOnline() {
   const [isVisible, setIsVisible] = useState(false);
   const lastScrollY = useRef(0);
 
@@ -13,11 +13,9 @@ export function FloatingCTA() {
       const currentScrollY = window.scrollY || window.pageYOffset;
       const isMobile = window.innerWidth < 768;
       
-      // Only show on mobile and when scrolling down
       if (isMobile && currentScrollY > lastScrollY.current && currentScrollY > 10) {
         setIsVisible(true);
       } else if (currentScrollY <= 10) {
-        // Hide when at top
         setIsVisible(false);
       }
       
@@ -47,8 +45,8 @@ export function FloatingCTA() {
         size="lg"
         className="w-full bg-verde-salvia hover:bg-verde-salvia/90 text-white shadow-lg py-6 text-base font-semibold"
       >
-        <Calendar className="w-5 h-5 mr-2" />
-        Reserva tu Consulta Online
+        <Video className="w-5 h-5 mr-2" />
+        Reservar Consulta Online
       </Button>
     </div>
   );

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { FloatingCTAOnline } from "@/components/FloatingCTAOnline";
 import { Heart, Activity, Utensils, Sparkles, Brain, Leaf, Calendar, Video, Check } from "lucide-react";
 import Image from "next/image";
 
@@ -281,6 +282,7 @@ export default function ConsultasOnlinePage() {
         </section>
 
       </div>
+      <FloatingCTAOnline />
     </>
   );
 }

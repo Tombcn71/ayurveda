@@ -3,9 +3,10 @@ import { Footer } from '@/components/Footer'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { FloatingCTAGuia } from '@/components/FloatingCTAGuia'
 import Link from 'next/link'
 import Image from 'next/image'
-import { MapPin, Phone, Clock, Euro } from 'lucide-react'
+import { MapPin, Phone, Clock, Euro, Calendar } from 'lucide-react'
 
 export const metadata = {
   title: 'Ayurveda en Madrid: Centro Harit - Consultas y Tratamientos',
@@ -286,6 +287,7 @@ export default function AyurvedaMadridGuia() {
         </div>
       </article>
       <Footer />
+      <FloatingCTAGuia />
     </>
   )
 }

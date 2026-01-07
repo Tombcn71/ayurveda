@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { FloatingCTARasayana } from "@/components/FloatingCTARasayana";
 import { Sparkles, Heart, Zap, Shield, Brain, Sun, Calendar, Book, Users, Video, Leaf } from "lucide-react";
 import Image from "next/image";
 
@@ -359,6 +360,7 @@ export default function RasayanaRejuvenecimientoPage() {
         </section>
 
       </div>
+      <FloatingCTARasayana />
     </>
   );
 }

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { FloatingCTAMeditacion } from "@/components/FloatingCTAMeditacion";
 import { Calendar, Clock, Users, Video, Phone, Heart, Brain, Sparkles } from "lucide-react";
 import Image from "next/image";
 
@@ -346,6 +347,7 @@ export default function CursoMeditacionPage() {
         </section>
 
       </div>
+      <FloatingCTAMeditacion />
     </>
   );
 }

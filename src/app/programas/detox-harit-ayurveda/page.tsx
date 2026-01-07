@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { FloatingCTADetox } from "@/components/FloatingCTADetox";
 import { Sparkles, Leaf, Heart, Moon, Zap, Scale, Smile, Shield, Calendar, Users, Video } from "lucide-react";
 import Image from "next/image";
 
@@ -362,6 +363,7 @@ export default function DetoxHaritAyurvedaPage() {
         </section>
 
       </div>
+      <FloatingCTADetox />
     </>
   );
 }

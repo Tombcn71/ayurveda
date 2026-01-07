@@ -3,10 +3,11 @@ import { Footer } from '@/components/Footer'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { FloatingCTAGuia } from '@/components/FloatingCTAGuia'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import Link from 'next/link'
 import Image from 'next/image'
-import { BookOpen, Heart, Leaf, Sparkles, Clock, Users } from 'lucide-react'
+import { BookOpen, Heart, Leaf, Sparkles, Clock, Users, Calendar } from 'lucide-react'
 
 export const metadata = {
   title: 'Qué es Ayurveda: La Guía Completa 2025 | Harit Ayurveda',
@@ -482,6 +483,7 @@ export default function QueEsAyurvedaGuia() {
         </div>
       </article>
       <Footer />
+      <FloatingCTAGuia />
     </>
   )
 }

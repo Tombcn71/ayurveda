@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { FloatingCTAGestionEstres } from "@/components/FloatingCTAGestionEstres";
 import { Heart, Brain, Moon, Smile, Shield, Sparkles, Quote, Star } from "lucide-react";
 import Image from "next/image";
 
@@ -207,6 +208,7 @@ export default function GestionDelEstresPage() {
         </section>
 
       </div>
+      <FloatingCTAGestionEstres />
     </>
   );
 }

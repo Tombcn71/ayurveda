@@ -3,8 +3,10 @@ import { Footer } from '@/components/Footer'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { FloatingCTAGuia } from '@/components/FloatingCTAGuia'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Calendar } from 'lucide-react'
 
 export const metadata = {
   title: 'Guía Completa de los Doshas: Vata, Pitta y Kapha | Harit Ayurveda',
@@ -157,6 +159,7 @@ export default function DoshasGuia() {
         </div>
       </article>
       <Footer />
+      <FloatingCTAGuia />
     </>
   )
 }
