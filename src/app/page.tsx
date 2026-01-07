@@ -586,12 +586,6 @@ export default function Home() {
       {/* Pilar Section */}
       <section id="ayurveda-harit" className="section-padding bg-background">
    <div className="max-w-6xl mx-auto px-4">
-     <div className="text-center mb-12">
-       <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-4">
-         Qué es ayurveda harit?
-       </h2>
-     </div>
-
     {/* items-stretch zorgt ervoor dat beide kolommen even hoog zijn */}
     <div className="grid md:grid-cols-2 gap-12 items-stretch">
       
