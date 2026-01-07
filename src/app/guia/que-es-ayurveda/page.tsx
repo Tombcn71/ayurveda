@@ -1,3 +1,5 @@
+"use client";
+
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Button } from '@/components/ui/button'
@@ -8,18 +10,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import Link from 'next/link'
 import Image from 'next/image'
 import { BookOpen, Heart, Leaf, Sparkles, Clock, Users, Calendar } from 'lucide-react'
-
-export const metadata = {
-  title: 'Qué es Ayurveda: La Guía Completa 2025 | Harit Ayurveda',
-  description: 'Descubre qué es el Ayurveda, sus principios, doshas y cómo puede transformar tu salud. Guía completa por Pilar Franco de Sarabia, experta en Ayurveda.',
-  keywords: 'qué es ayurveda, ayurveda españa, medicina ayurvédica, doshas, vata pitta kapha, ayurveda madrid',
-  openGraph: {
-    title: 'Qué es Ayurveda: La Guía Completa',
-    description: 'La guía definitiva sobre Ayurveda por expertos',
-    type: 'article',
-    locale: 'es_ES',
-  },
-}
 
 export default function QueEsAyurvedaGuia() {
   const schema = {

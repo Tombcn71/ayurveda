@@ -1,3 +1,5 @@
+"use client";
+
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Button } from '@/components/ui/button'
@@ -6,17 +8,6 @@ import { Badge } from '@/components/ui/badge'
 import { FloatingCTAGuia } from '@/components/FloatingCTAGuia'
 import Image from 'next/image'
 import { MapPin, Phone, Clock, Euro, Calendar } from 'lucide-react'
-
-export const metadata = {
-  title: 'Ayurveda en Madrid: Centro Harit - Consultas y Tratamientos',
-  description: 'Centro de Ayurveda en Madrid. Consultas ayurvédicas, tratamientos Panchakarma, masajes y programas de bienestar con Pilar Franco. Zona Pozuelo, Las Rozas.',
-  keywords: 'ayurveda madrid, consulta ayurveda madrid, tratamientos ayurvédicos madrid, panchakarma madrid, centro ayurveda madrid, medicina ayurvédica madrid',
-  openGraph: {
-    title: 'Ayurveda en Madrid - Centro Harit Ayurveda',
-    description: 'Tu centro de Ayurveda en Madrid con más de 25 años de experiencia',
-    locale: 'es_ES',
-  },
-}
 
 export default function AyurvedaMadridGuia() {
   const localBusinessSchema = {

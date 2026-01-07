@@ -1,3 +1,5 @@
+"use client";
+
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { Button } from '@/components/ui/button'
@@ -6,12 +8,6 @@ import { Badge } from '@/components/ui/badge'
 import { FloatingCTAGuia } from '@/components/FloatingCTAGuia'
 import Image from 'next/image'
 import { Calendar } from 'lucide-react'
-
-export const metadata = {
-  title: 'Guía Completa de los Doshas: Vata, Pitta y Kapha | Harit Ayurveda',
-  description: 'Descubre tu dosha ayurvédico. Guía completa sobre Vata, Pitta y Kapha: características, desequilibrios y cómo equilibrarlos naturalmente.',
-  keywords: 'doshas ayurveda, vata pitta kapha, test doshas, constitución ayurvédica, equilibrar doshas',
-}
 
 export default function DoshasGuia() {
   const schema = {
