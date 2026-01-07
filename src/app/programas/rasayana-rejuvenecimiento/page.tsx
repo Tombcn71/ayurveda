@@ -111,7 +111,16 @@ export default function RasayanaRejuvenecimientoPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button size="lg" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-verde-salvia hover:bg-verde-salvia/90 text-white">
+                <Button 
+                  size="lg" 
+                  className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-verde-salvia hover:bg-verde-salvia/90 text-white"
+                  onClick={() => {
+                    const contactElement = document.getElementById("contact");
+                    if (contactElement) {
+                      contactElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }
+                  }}
+                >
                   Reservar Plaza
                 </Button>
                 <Button size="lg" variant="outline" className="text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20">
@@ -335,7 +344,17 @@ export default function RasayanaRejuvenecimientoPage() {
                   <p className="text-white text-3xl font-bold mb-4">19 Nov 2025 - 19 Ene 2026</p>
                 </div>
                 
-                <Button size="lg" variant="hero" className="text-lg px-10 py-6 mb-6">
+                <Button 
+                  size="lg" 
+                  variant="hero" 
+                  className="text-lg px-10 py-6 mb-6"
+                  onClick={() => {
+                    const contactElement = document.getElementById("contact");
+                    if (contactElement) {
+                      contactElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }
+                  }}
+                >
                   Reservar Mi Plaza
                 </Button>
                 

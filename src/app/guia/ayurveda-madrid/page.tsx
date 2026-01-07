@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { FloatingCTAGuia } from '@/components/FloatingCTAGuia'
-import Link from 'next/link'
 import Image from 'next/image'
 import { MapPin, Phone, Clock, Euro, Calendar } from 'lucide-react'
 
@@ -270,11 +269,18 @@ export default function AyurvedaMadridGuia() {
                 Descubre cómo el Ayurveda puede transformar tu salud. Primera consulta disponible presencial u online.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <Link href="/consultas">
-                  <Button size="lg" variant="hero">
-                    Reservar Consulta
-                  </Button>
-                </Link>
+                <Button 
+                  size="lg" 
+                  variant="hero"
+                  onClick={() => {
+                    const contactElement = document.getElementById("contact");
+                    if (contactElement) {
+                      contactElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }
+                  }}
+                >
+                  Reservar Consulta
+                </Button>
                 <a href="tel:+34664462368">
                   <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                     <Phone className="w-4 h-4 mr-2" />

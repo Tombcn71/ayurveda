@@ -442,11 +442,19 @@ export default function QueEsAyurvedaGuia() {
                 Descubre tu constitución única y cómo el Ayurveda puede transformar tu salud y bienestar con una consulta personalizada.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <Link href="/consultas">
-                  <Button size="lg" variant="hero" className="bg-cream text-forest hover:bg-cream/90">
-                    Reservar Consulta
-                  </Button>
-                </Link>
+                <Button 
+                  size="lg" 
+                  variant="hero" 
+                  className="bg-cream text-forest hover:bg-cream/90"
+                  onClick={() => {
+                    const contactElement = document.getElementById("contact");
+                    if (contactElement) {
+                      contactElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }
+                  }}
+                >
+                  Reservar Consulta
+                </Button>
                 <Link href="/guia/doshas">
                   <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                     Conocer los Doshas

@@ -30,9 +30,9 @@ export function FloatingCTAHome() {
   }, []);
 
   const handleClick = () => {
-    const contactElement = document.getElementById("contact");
-    if (contactElement) {
-      contactElement.scrollIntoView({ behavior: "smooth", block: "start" });
+    const ayurvedaHaritElement = document.getElementById("ayurveda-harit");
+    if (ayurvedaHaritElement) {
+      ayurvedaHaritElement.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 

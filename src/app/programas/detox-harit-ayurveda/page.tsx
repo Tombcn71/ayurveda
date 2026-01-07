@@ -82,7 +82,16 @@ export default function DetoxHaritAyurvedaPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button size="lg" className="text-lg px-8 py-6 bg-verde-salvia hover:bg-verde-salvia/90 text-white">
+                <Button 
+                  size="lg" 
+                  className="text-lg px-8 py-6 bg-verde-salvia hover:bg-verde-salvia/90 text-white"
+                  onClick={() => {
+                    const contactElement = document.getElementById("contact");
+                    if (contactElement) {
+                      contactElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }
+                  }}
+                >
                   Inscríbete - 275€
                 </Button>
                 <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20">
@@ -343,7 +352,17 @@ export default function DetoxHaritAyurvedaPage() {
                 <div className="text-sm text-emerald-200 mb-8">
                   20% de descuento en productos si ya has hecho un Detox con nosotros
                 </div>
-                <Button size="lg" variant="hero" className="text-lg px-10 py-6 mb-6">
+                <Button 
+                  size="lg" 
+                  variant="hero" 
+                  className="text-lg px-10 py-6 mb-6"
+                  onClick={() => {
+                    const contactElement = document.getElementById("contact");
+                    if (contactElement) {
+                      contactElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }
+                  }}
+                >
                   Inscribirme Ahora
                 </Button>
                 <div className="border-t border-white/20 pt-6 mt-6">

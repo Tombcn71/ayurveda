@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { FloatingCTAGuia } from '@/components/FloatingCTAGuia'
-import Link from 'next/link'
 import Image from 'next/image'
 import { Calendar } from 'lucide-react'
 
@@ -149,11 +148,19 @@ export default function DoshasGuia() {
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
                 Una consulta ayurvédica determinará tu constitución única y cómo equilibrar tus doshas
               </p>
-              <Link href="/consultas">
-                <Button size="lg" variant="hero" className="bg-cream text-forest hover:bg-cream/90">
-                  Reservar Consulta
-                </Button>
-              </Link>
+              <Button 
+                size="lg" 
+                variant="hero" 
+                className="bg-cream text-forest hover:bg-cream/90"
+                onClick={() => {
+                  const contactElement = document.getElementById("contact");
+                  if (contactElement) {
+                    contactElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }
+                }}
+              >
+                Reservar Consulta
+              </Button>
             </Card>
           </div>
         </div>

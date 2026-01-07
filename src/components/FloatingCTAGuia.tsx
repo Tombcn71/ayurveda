@@ -30,7 +30,10 @@ export function FloatingCTAGuia() {
   }, []);
 
   const handleClick = () => {
-    window.location.href = '/consultas';
+    const contactElement = document.getElementById("contact");
+    if (contactElement) {
+      contactElement.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   if (!isVisible) return null;

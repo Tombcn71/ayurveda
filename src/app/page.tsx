@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Leaf, Heart, Users, Sparkles, ShoppingBag, ArrowRight, Check, Brain, Shield, Sunrise, Zap, ChevronLeft, ChevronRight, ChevronDown, Quote, BookOpen, FileText, Utensils, MessageCircle, Mail, MapPin, Calendar, Send, Star, ShoppingCart, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -275,8 +276,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left - Hero Text */}
             <div>
-              <span className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 text-sm font-medium text-primary bg-sage-light/60 rounded-full animate-fade-up">
-                <Leaf className="w-4 h-4 md:hidden" />
+              <span className="hidden md:inline-flex items-center gap-2 px-4 py-1.5 mb-6 text-sm font-medium text-primary bg-sage-light/60 rounded-full animate-fade-up">
                 + de 20 años de experiencia
               </span>
               
@@ -285,11 +285,18 @@ export default function Home() {
                 <span className="text-[#8C986B] italic">equilibrio</span>
               </h1>
               
-              <p className="text-lg md:text-xl text-black mb-10 max-w-xl leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
+              <p className="text-lg md:text-xl text-black mb-6 md:mb-10 max-w-xl leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
                 Descubre la sabiduría milenaria del Ayurveda combinada con ciencia moderna para recuperar tu bienestar natural.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+              <div className="flex md:hidden justify-center mb-6 animate-fade-up" style={{ animationDelay: "0.25s" }}>
+                <span className="inline-flex items-center gap-2 px-6 py-3 text-lg font-medium text-primary bg-sage-light/60 rounded-full">
+                  <Leaf className="w-6 h-6" />
+                  + de 20 años de experiencia
+                </span>
+              </div>
+
+              <div className="hidden md:flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
                 <Button 
                   variant="default" 
                   size="lg"
@@ -577,7 +584,7 @@ export default function Home() {
       </section>
 
       {/* Pilar Section */}
-      <section className="section-padding bg-background">
+      <section id="ayurveda-harit" className="section-padding bg-background">
    <div className="max-w-6xl mx-auto px-4">
      <div className="text-center mb-12">
        <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-4">
@@ -747,7 +754,16 @@ export default function Home() {
                 Agenda tu primera consulta o inscríbete en nuestro próximo Programa Detox.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-cream text-forest hover:bg-cream/90 font-semibold">
+                <Button 
+                  size="lg" 
+                  className="bg-cream text-forest hover:bg-cream/90 font-semibold"
+                  onClick={() => {
+                    const contactElement = document.getElementById('contact');
+                    if (contactElement) {
+                      contactElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
+                >
                   Reservar Consulta
                 </Button>
                 <Button size="lg" variant="outline" className="border-cream/30 text-cream hover:bg-cream/10 hover:text-cream">

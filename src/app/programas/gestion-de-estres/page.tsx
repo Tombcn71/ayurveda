@@ -84,7 +84,18 @@ export default function GestionDelEstresPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button size="lg" className="text-lg px-8 py-6 bg-verde-salvia hover:bg-verde-salvia/90 text-white">Primera Consulta - 121€</Button>
+                <Button 
+                  size="lg" 
+                  className="text-lg px-8 py-6 bg-verde-salvia hover:bg-verde-salvia/90 text-white"
+                  onClick={() => {
+                    const contactElement = document.getElementById("contact");
+                    if (contactElement) {
+                      contactElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }
+                  }}
+                >
+                  Primera Consulta - 121€
+                </Button>
               </div>
             </motion.div>
           </div>
@@ -201,7 +212,19 @@ export default function GestionDelEstresPage() {
                 <div className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6">121€</div>
                 <div className="text-emerald-100 text-lg mb-4">Primera Consulta Ayurvédica</div>
                 <div className="text-sm text-emerald-200 mb-6">*Esta cantidad se restará del programa completo</div>
-                <Button size="lg" variant="hero" className="text-lg px-10 py-6">Reservar Primera Consulta</Button>
+                <Button 
+                  size="lg" 
+                  variant="hero" 
+                  className="text-lg px-10 py-6"
+                  onClick={() => {
+                    const contactElement = document.getElementById("contact");
+                    if (contactElement) {
+                      contactElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                    }
+                  }}
+                >
+                  Reservar Primera Consulta
+                </Button>
               </div>
             </motion.div>
           </div>
