@@ -303,7 +303,7 @@ export default function Home() {
                 <Button 
                   variant="default" 
                   size="lg"
-                  className="bg-[#869266] hover:bg-[#748055] text-white border-0 shadow-elevated"
+                  className="bg-[#009E4B] hover:bg-[#007a3a] text-white border-0 shadow-elevated"
                   onClick={() => {
                     const contactElement = document.getElementById('contact');
                     if (contactElement) {

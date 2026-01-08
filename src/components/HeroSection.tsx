@@ -77,8 +77,35 @@ Mas de 20 años de experiencia </span>
               transition={{ duration: 0.8, delay: 0.3 }}
               className="hidden lg:flex flex-wrap gap-4"
             >
-              <button 
-                className="group inline-flex items-center justify-center gap-2 h-14 px-10 text-base rounded-xl font-semibold shadow-elevated hover:shadow-gold transition-all duration-300 !bg-[#009E4B] hover:!bg-[#007a3a] !text-white"
+              <button
+                onClick={() => {
+                  const contactElement = document.getElementById("contact");
+                  if (contactElement) {
+                    contactElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                  }
+                }}
+                style={{
+                  backgroundColor: '#009E4B',
+                  color: 'white',
+                  padding: '1rem 2.5rem',
+                  borderRadius: '0.75rem',
+                  fontSize: '1rem',
+                  fontWeight: '600',
+                  boxShadow: '0 12px 40px -8px rgba(0,0,0,0.12)',
+                  border: 'none',
+                  cursor: 'pointer',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                  transition: 'all 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#007a3a';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#009E4B';
+                }}
+                className="group"
               >
                 Reserva tu Consulta Online
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
