@@ -43,7 +43,7 @@ export function FloatingCTAOnline() {
       <Button
         onClick={handleClick}
         size="lg"
-        className="w-full bg-verde-salvia hover:bg-verde-salvia/90 text-white shadow-lg py-6 text-base font-semibold"
+        className="w-full bg-[#009E4B] hover:bg-[#007a3a] text-white shadow-lg py-6 text-base font-semibold"
       >
         <Video className="w-5 h-5 mr-2" />
         Reservar Consulta Online

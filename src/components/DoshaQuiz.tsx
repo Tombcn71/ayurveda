@@ -73,7 +73,7 @@ const doshaResults = {
     name: "Kapha",
     description: "Tu constitución es predominantemente Kapha. Eres tranquilo, estable y leal. Tu elemento es la tierra y el agua.",
     traits: ["Tranquilo", "Estable", "Leal", "Fuerte"],
-    color: "from-emerald-500 to-teal-600",
+    color: "from-[#009E4B] to-[#007a3a]",
   },
 };
 
@@ -124,7 +124,7 @@ export const DoshaQuiz = () => {
   return (
     <div className="bg-cream/95 backdrop-blur-md rounded-2xl shadow-elevated border border-gold/20 overflow-hidden">
       {/* Header */}
-      <div className="bg-[#869266] px-6 py-4">
+      <div className="bg-[#009E4B] px-6 py-4">
         <div className="flex items-center gap-2 mb-1">
           <Sparkles className="w-5 h-5 text-gold" />
           <h3 className="font-serif text-xl text-cream font-semibold">Test de Doshas</h3>
@@ -152,7 +152,7 @@ export const DoshaQuiz = () => {
                 </div>
                 <div className="h-2 bg-sage-light rounded-full overflow-hidden">
                   <motion.div
-                    className="h-full bg-gradient-to-r from-[#869266] to-gold"
+                    className="h-full bg-gradient-to-r from-[#009E4B] to-gold"
                     initial={{ width: 0 }}
                     animate={{ width: `${progress}%` }}
                     transition={{ duration: 0.3 }}
@@ -171,9 +171,9 @@ export const DoshaQuiz = () => {
                   <button
                     key={index}
                     onClick={() => handleAnswer(option.dosha)}
-                    className="w-full text-left p-4 rounded-xl border-2 border-border/50 bg-background hover:border-[#869266] hover:bg-sage-light/30 transition-all duration-200 group"
+                    className="w-full text-left p-4 rounded-xl border-2 border-border/50 bg-background hover:border-[#009E4B] hover:bg-sage-light/30 transition-all duration-200 group"
                   >
-                    <span className="text-sm text-foreground group-hover:text-[#869266] transition-colors">
+                    <span className="text-sm text-foreground group-hover:text-[#009E4B] transition-colors">
                       {option.text}
                     </span>
                   </button>
@@ -225,7 +225,7 @@ export const DoshaQuiz = () => {
                     </div>
 
                     <div className="space-y-3">
-                      <Button variant="gold" className="w-full group" size="lg">
+                      <Button variant="default" className="w-full group bg-[#009E4B] hover:bg-[#007a3a] text-white" size="lg">
                         <Calendar className="w-4 h-4" />
                         Reservar Consulta Gratis
                         <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

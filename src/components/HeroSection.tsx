@@ -19,14 +19,14 @@ export const HeroSection = () => {
           priority
         />
         {/* Sunlight effect - lighter from top */}
-        <div className="absolute inset-0 bg-gradient-to-b from-crema/20 via-verde-salvia/10 to-verde-oscuro/15" />
+        <div className="absolute inset-0 bg-gradient-to-b from-crema/20 via-[#009E4B]/10 to-[#009E4B]/15" />
         {/* Subtle warm overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-crema/5 to-transparent" />
       </div>
 
       {/* Decorative Elements */}
       <div className="absolute top-20 right-10 w-72 h-72 bg-gold/10 rounded-full blur-3xl animate-pulse-soft" />
-      <div className="absolute bottom-20 left-10 w-96 h-96 bg-sage/10 rounded-full blur-3xl animate-pulse-soft delay-1000" />
+      <div className="absolute bottom-20 left-10 w-96 h-96 bg-[#009E4B]/10 rounded-full blur-3xl animate-pulse-soft delay-1000" />
 
       {/* Content */}
       <div className="relative container-width section-padding pt-24 lg:pt-32">
@@ -77,9 +77,12 @@ Mas de 20 años de experiencia </span>
               transition={{ duration: 0.8, delay: 0.3 }}
               className="hidden lg:flex flex-wrap gap-4"
             >
-              <Button variant="hero" size="lg" className="group">
-              Reserva tu consulta online                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-              </Button>
+              <button 
+                className="group inline-flex items-center justify-center gap-2 h-14 px-10 text-base rounded-xl font-semibold shadow-elevated hover:shadow-gold transition-all duration-300 !bg-[#009E4B] hover:!bg-[#007a3a] !text-white"
+              >
+                Reserva tu Consulta Online
+                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+              </button>
               
             </motion.div>
 
