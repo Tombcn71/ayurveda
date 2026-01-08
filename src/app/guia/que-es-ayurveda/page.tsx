@@ -1265,11 +1265,11 @@ export default function QueEsAyurvedaGuia() {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 bg-verde-salvia text-white p-4 rounded-full shadow-lg hover:bg-verde-salvia/90 transition-all duration-300 hover:scale-110 flex items-center gap-2"
+          className="hidden lg:flex fixed bottom-8 right-8 z-50 bg-verde-salvia text-white p-4 rounded-full shadow-lg hover:bg-verde-salvia/90 transition-all duration-300 hover:scale-110 items-center gap-2"
           aria-label="Volver arriba"
         >
           <ChevronUp className="w-5 h-5" />
-          <span className="text-sm font-medium hidden sm:inline">Volver arriba</span>
+          <span className="text-sm font-medium">Volver arriba</span>
         </button>
       )}
     </>
