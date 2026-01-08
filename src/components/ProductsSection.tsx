@@ -77,10 +77,15 @@ export const ProductsSection = () => {
             initial={{ scale: 0.9 }}
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 mt-8 px-6 py-3 bg-gold/20 backdrop-blur-sm rounded-full border border-gold/30"
+            className="inline-flex flex-col items-center gap-2 mt-8"
           >
-            <Percent className="w-5 h-5 text-gold" />
-            <span className="text-cream font-semibold">20% de Descuento en productos seleccionados</span>
+            <div className="inline-flex items-center gap-2 px-6 py-3 bg-gold/20 backdrop-blur-sm rounded-full border border-gold/30">
+              <Percent className="w-5 h-5 text-gold" />
+              <span className="text-cream font-semibold">20% de Descuento en productos seleccionados</span>
+            </div>
+            <p className="text-cream/90 text-sm italic">
+              Oferta disponible solo hasta agotar existencia
+            </p>
           </motion.div>
         </motion.div>
 

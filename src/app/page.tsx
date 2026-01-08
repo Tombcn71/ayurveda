@@ -411,9 +411,14 @@ export default function Home() {
               Incorpora los secretos de la medicina milenaria en tu vida diaria
             </p>
             
-            <div className="inline-flex items-center gap-2 mt-8 bg-[#CDA216]/10 border border-[#CDA216]/30 rounded-full px-6 py-3">
-              <span className="text-[#CDA216] font-semibold">%</span>
-              <span className="text-forest font-sans">20% de Descuento en productos seleccionados</span>
+            <div className="inline-flex flex-col items-center gap-2 mt-8">
+              <div className="inline-flex items-center gap-2 bg-[#CDA216]/10 border border-[#CDA216]/30 rounded-full px-6 py-3">
+                <span className="text-[#CDA216] font-semibold">%</span>
+                <span className="text-forest font-sans">20% de Descuento en productos seleccionados</span>
+              </div>
+              <p className="text-muted-foreground text-sm italic">
+                Oferta disponible solo hasta agotar existencia
+              </p>
             </div>
           </div>
 

@@ -9,9 +9,29 @@ import { FloatingCTAGuia } from '@/components/FloatingCTAGuia'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import Link from 'next/link'
 import Image from 'next/image'
-import { BookOpen, Clock, Activity } from 'lucide-react'
+import { BookOpen, Clock, Activity, ChevronUp } from 'lucide-react'
+import { useState, useEffect } from 'react'
 
 export default function EjercicioAyurvedicoPage() {
+  const [showScrollTop, setShowScrollTop] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollTop(true)
+      } else {
+        setShowScrollTop(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <>
       <Header />
@@ -53,9 +73,9 @@ export default function EjercicioAyurvedicoPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div className="flex flex-col lg:flex-row gap-8">
               {/* Navigation Sidebar */}
-              <aside className="lg:w-64 lg:flex-shrink-0 hidden lg:block">
-                <div className="lg:sticky lg:top-24">
-                  <Card className="p-6 bg-white border border-gray-200 shadow-sm">
+              <aside className="lg:w-64 lg:flex-shrink-0 hidden lg:block lg:self-start">
+                <div className="sticky top-24 z-10">
+                  <Card className="p-6 bg-white border border-gray-200 shadow-lg rounded-xl">
                     <h3 className="font-bold text-lg text-foreground mb-4 flex items-center gap-2">
                       <BookOpen className="w-5 h-5 text-verde-salvia" />
                       Navegación
@@ -893,6 +913,18 @@ export default function EjercicioAyurvedicoPage() {
       </article>
       <FloatingCTAGuia />
       <Footer />
+      
+      {/* Volver arriba button */}
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 z-50 bg-verde-salvia text-white p-4 rounded-full shadow-lg hover:bg-verde-salvia/90 transition-all duration-300 hover:scale-110 flex items-center gap-2"
+          aria-label="Volver arriba"
+        >
+          <ChevronUp className="w-5 h-5" />
+          <span className="text-sm font-medium hidden sm:inline">Volver arriba</span>
+        </button>
+      )}
     </>
   )
 }

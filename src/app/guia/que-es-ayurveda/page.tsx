@@ -9,9 +9,29 @@ import { FloatingCTAGuia } from '@/components/FloatingCTAGuia'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import Link from 'next/link'
 import Image from 'next/image'
-import { BookOpen, Heart, Leaf, Sparkles, Clock, Users, Calendar } from 'lucide-react'
+import { BookOpen, Heart, Leaf, Sparkles, Clock, Users, Calendar, ChevronUp } from 'lucide-react'
+import { useState, useEffect } from 'react'
 
 export default function QueEsAyurvedaGuia() {
+  const [showScrollTop, setShowScrollTop] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollTop(true)
+      } else {
+        setShowScrollTop(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -126,9 +146,9 @@ export default function QueEsAyurvedaGuia() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div className="flex flex-col lg:flex-row gap-8">
               {/* Navigation Sidebar */}
-              <aside className="lg:w-64 lg:flex-shrink-0 hidden lg:block">
-                <div className="lg:sticky lg:top-24">
-                  <Card className="p-6 bg-white border border-gray-200 shadow-sm">
+              <aside className="lg:w-64 lg:flex-shrink-0 hidden lg:block lg:self-start">
+                <div className="sticky top-24 z-10">
+                  <Card className="p-6 bg-white border border-gray-200 shadow-lg rounded-xl">
                     <h3 className="font-bold text-lg text-foreground mb-4 flex items-center gap-2">
                       <BookOpen className="w-5 h-5 text-verde-salvia" />
                       Navegación
@@ -241,134 +261,134 @@ export default function QueEsAyurvedaGuia() {
 
               {/* Main Content */}
               <div className="flex-1 max-w-4xl">
-            {/* Mobile Navigation */}
-            <div className="lg:hidden mb-6">
-              <Card className="p-4 bg-white border border-gray-200 shadow-sm">
-                <details className="group">
-                  <summary className="font-bold text-lg text-foreground flex items-center justify-between cursor-pointer list-none">
-                    <span className="flex items-center gap-2">
-                      <BookOpen className="w-5 h-5 text-verde-salvia" />
-                      Navegación
-                    </span>
-                    <span className="text-verde-salvia group-open:rotate-180 transition-transform">▼</span>
-                  </summary>
-                  <nav className="mt-4 space-y-2 pt-4 border-t border-gray-200">
-                    <a 
-                      href="#introduccion" 
-                      className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        document.getElementById('introduccion')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
-                      }}
-                    >
-                      Introducción
-                    </a>
-                    <a 
-                      href="#doshas" 
-                      className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        document.getElementById('doshas')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
-                      }}
-                    >
-                      Los Tres Doshas
-                    </a>
-                    <a 
-                      href="#nutricion" 
-                      className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        document.getElementById('nutricion')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
-                      }}
-                    >
-                      Nutrición Ayurvédica
-                    </a>
-                    <a 
-                      href="#rutinas" 
-                      className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        document.getElementById('rutinas')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
-                      }}
-                    >
-                      Rutinas Diarias
-                    </a>
-                    <a 
-                      href="#hierbas" 
-                      className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        document.getElementById('hierbas')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
-                      }}
-                    >
-                      Hierbas y Tratamientos
-                    </a>
-                    <a 
-                      href="#yoga" 
-                      className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        document.getElementById('yoga')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
-                      }}
-                    >
-                      Yoga y Pranayama
-                    </a>
-                    <a 
-                      href="#salud-mental" 
-                      className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        document.getElementById('salud-mental')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
-                      }}
-                    >
-                      Salud Mental
-                    </a>
-                    <a 
-                      href="#aplicacion" 
-                      className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        document.getElementById('aplicacion')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
-                      }}
-                    >
-                      Aplicación Práctica
-                    </a>
-                    <a 
-                      href="#medicina-moderna" 
-                      className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        document.getElementById('medicina-moderna')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
-                      }}
-                    >
-                      Ayurveda y Medicina Moderna
-                    </a>
-                    <a 
-                      href="#conclusion" 
-                      className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        document.getElementById('conclusion')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
-                      }}
-                    >
-                      Conclusión
-                    </a>
-                  </nav>
-                </details>
-              </Card>
-            </div>
+                {/* Mobile Navigation */}
+                <div className="lg:hidden mb-6">
+                  <Card className="p-4 bg-white border border-gray-200 shadow-sm">
+                    <details className="group">
+                      <summary className="font-bold text-lg text-foreground flex items-center justify-between cursor-pointer list-none">
+                        <span className="flex items-center gap-2">
+                          <BookOpen className="w-5 h-5 text-verde-salvia" />
+                          Navegación
+                        </span>
+                        <span className="text-verde-salvia group-open:rotate-180 transition-transform">▼</span>
+                      </summary>
+                      <nav className="mt-4 space-y-2 pt-4 border-t border-gray-200">
+                        <a 
+                          href="#introduccion" 
+                          className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById('introduccion')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
+                          }}
+                        >
+                          Introducción
+                        </a>
+                        <a 
+                          href="#doshas" 
+                          className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById('doshas')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
+                          }}
+                        >
+                          Los Tres Doshas
+                        </a>
+                        <a 
+                          href="#nutricion" 
+                          className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById('nutricion')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
+                          }}
+                        >
+                          Nutrición Ayurvédica
+                        </a>
+                        <a 
+                          href="#rutinas" 
+                          className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById('rutinas')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
+                          }}
+                        >
+                          Rutinas Diarias
+                        </a>
+                        <a 
+                          href="#hierbas" 
+                          className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById('hierbas')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
+                          }}
+                        >
+                          Hierbas y Tratamientos
+                        </a>
+                        <a 
+                          href="#yoga" 
+                          className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById('yoga')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
+                          }}
+                        >
+                          Yoga y Pranayama
+                        </a>
+                        <a 
+                          href="#salud-mental" 
+                          className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById('salud-mental')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
+                          }}
+                        >
+                          Salud Mental
+                        </a>
+                        <a 
+                          href="#aplicacion" 
+                          className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById('aplicacion')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
+                          }}
+                        >
+                          Aplicación Práctica
+                        </a>
+                        <a 
+                          href="#medicina-moderna" 
+                          className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById('medicina-moderna')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
+                          }}
+                        >
+                          Ayurveda y Medicina Moderna
+                        </a>
+                        <a 
+                          href="#conclusion" 
+                          className="block text-sm text-gray-700 hover:text-verde-salvia hover:font-medium transition-colors py-1"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById('conclusion')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            (e.currentTarget.closest('details') as HTMLDetailsElement)?.removeAttribute('open');
+                          }}
+                        >
+                          Conclusión
+                        </a>
+                      </nav>
+                    </details>
+                  </Card>
+                </div>
 
-            {/* Quick Summary */}
+                {/* Quick Summary */}
             <Card className="p-8 mb-12 border-l-4 border-verde-salvia bg-white">
               <h2 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-2">
                 <Sparkles className="w-6 h-6 text-verde-salvia" />
@@ -1240,6 +1260,18 @@ export default function QueEsAyurvedaGuia() {
       </article>
       <Footer />
       <FloatingCTAGuia />
+      
+      {/* Volver arriba button */}
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 z-50 bg-verde-salvia text-white p-4 rounded-full shadow-lg hover:bg-verde-salvia/90 transition-all duration-300 hover:scale-110 flex items-center gap-2"
+          aria-label="Volver arriba"
+        >
+          <ChevronUp className="w-5 h-5" />
+          <span className="text-sm font-medium hidden sm:inline">Volver arriba</span>
+        </button>
+      )}
     </>
   )
 }
