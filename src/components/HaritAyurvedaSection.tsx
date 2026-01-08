@@ -191,19 +191,25 @@ export const HaritAyurvedaSection = () => {
 
                     <p>
 
-                      <strong className="text-gray-900">Harit Ayurveda en España</strong> es un sistema holístico de <strong>medicina natural india</strong> que integra más de 5.000 años de sabiduría ancestral del <strong>Ayurveda</strong> con técnicas terapéuticas modernas y científicas.
+                      Harit nace para crear una nueva forma de salud y bienestar, una nueva visión de uno mismo y del mundo. Inspiramos a las personas a que transformen positivamente sus vidas y decidan ser felices.
 
                     </p>
 
                     <p>
 
-                      Esta práctica de <strong>medicina ayurvédica en España</strong> restaura el <strong>equilibrio natural del cuerpo, mente y espíritu</strong> mediante <strong>tratamientos personalizados en España</strong>, plantas medicinales certificadas, alimentación consciente según tu dosha y terapias de desintoxicación Panchakarma.
+                      <strong className="text-gray-900">LA ESENCIA</strong> de Harit es <strong>Nutrir</strong>… no solo cuerpo, sino mente, intelecto, sentidos, alma.
 
                     </p>
 
-                    <p className="text-sm text-gray-600 italic">
+                    <p>
 
-                      "Harit" significa 'verde' en sánscrito, enfatizando nuestra conexión profunda con la naturaleza y el uso exclusivo de <strong>remedios herbales naturales</strong> para promover la <strong>sanación integral en España</strong>.
+                      <strong className="text-gray-900">VISIÓN:</strong> Transformarnos poco a poco para alcanzar el equilibrio perfecto entre cuerpo, mente y alma. Teniendo una visión de la meta, pero disfrutando del camino, del aquí y el ahora.
+
+                    </p>
+
+                    <p>
+
+                      <strong className="text-gray-900">META:</strong> Crear salud y bienestar a nivel individual, social, empresarial, educativo y medioambiental a través de la sabiduría del Ayurveda, avalada por miles de años de experiencia y validada por la investigación y tecnología.
 
                     </p>
 

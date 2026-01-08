@@ -36,6 +36,22 @@ export default function GuiasPage() {
       image: 'https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800&q=80',
       readTime: '10 min',
       category: 'Local'
+    },
+    {
+      slug: 'alimentacion-ayurvedica',
+      title: 'Libro de Recetas Ayurveda',
+      description: 'Recetas saludables para cuerpo y mente: guía completa de cocina ayurvédica con platos que equilibran los doshas',
+      image: '/images/recetashero.jpg',
+      readTime: '12 recetas',
+      category: 'Cocina'
+    },
+    {
+      slug: 'ejercicio-ayurvedico',
+      title: 'Ejercicio Ayurvédico',
+      description: 'Guía completa para equilibrar tu cuerpo y mente según tu dosha: ejercicios personalizados, yoga, pranayama y rutinas estacionales',
+      image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80',
+      readTime: 'Guía completa',
+      category: 'Ejercicio'
     }
   ]
 

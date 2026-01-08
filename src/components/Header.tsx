@@ -28,8 +28,8 @@ const navItems = [
     name: "Guías", 
     subItems: [
       { name: "Qué es Ayurveda", href: "/guia/que-es-ayurveda" },
-      { name: "Los Doshas", href: "/guia/doshas" },
-      { name: "Ayurveda en Madrid", href: "/guia/ayurveda-madrid" }
+      { name: "Libro de Recetas", href: "/guia/alimentacion-ayurvedica" },
+      { name: "Ejercicio Ayurvédico", href: "/guia/ejercicio-ayurvedico" }
     ]
   },
 ];

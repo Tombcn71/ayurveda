@@ -200,18 +200,21 @@ const products = [
 const resources = [
   {
     icon: BookOpen,
-    title: "Artículos",
-    description: "Aprende sobre los principios del Ayurveda y cómo aplicarlos en tu día a día.",
-  },
-  {
-    icon: FileText,
-    title: "Guías Prácticas",
-    description: "Descarga guías gratuitas sobre rutinas, alimentación y autocuidado.",
+    title: "Qué es Ayurveda",
+    description: "La guía definitiva sobre Ayurveda, sus principios, historia y aplicaciones modernas.",
+    href: "/guia/que-es-ayurveda",
   },
   {
     icon: Utensils,
-    title: "Recetas Ayurvédicas",
-    description: "Deliciosas recetas adaptadas a cada constitución para nutrir tu cuerpo.",
+    title: "Libro de Recetas",
+    description: "Recetas saludables para cuerpo y mente: guía completa de cocina ayurvédica con platos que equilibran los doshas.",
+    href: "/guia/alimentacion-ayurvedica",
+  },
+  {
+    icon: Zap,
+    title: "Ejercicio Ayurvédico",
+    description: "Guía completa para equilibrar tu cuerpo y mente según tu dosha: ejercicios personalizados, yoga, pranayama y rutinas estacionales.",
+    href: "/guia/ejercicio-ayurvedico",
   },
 ];
 
@@ -690,24 +693,25 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-primary bg-sage-light/60 rounded-full animate-fade-up">
-                Blog & Recursos
+                Guías
               </span>
               <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-6">
                 Conocimiento para tu bienestar
               </h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Explora nuestro blog con artículos, guías y recetas que te ayudarán a incorporar el Ayurveda en tu vida cotidiana.
+                Explora nuestras guías completas que te ayudarán a incorporar el Ayurveda en tu vida cotidiana.
               </p>
               <Button variant="hero" size="lg" className="group">
-                <span>Ir a la guía</span>
+                <span>Ir a las guías</span>
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </div>
 
             <div className="space-y-4">
               {resources.map((resource, index) => (
-                <div
+                <Link
                   key={resource.title}
+                  href={resource.href || '#'}
                   className="group flex items-center gap-6 p-6 bg-card rounded-2xl shadow-soft card-hover cursor-pointer"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
@@ -723,7 +727,7 @@ export default function Home() {
                     </p>
                   </div>
                   <ArrowRight className="shrink-0 w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all" />
-                </div>
+                </Link>
               ))}
             </div>
           </div>
