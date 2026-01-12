@@ -4,28 +4,62 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
-        // 1. De hoofdpagina van de winkel
         source: "/tienda",
         destination: "https://martinaalejandrag12.sg-host.com/tienda/",
       },
       {
-        // 2. Vangt alle subpagina's op (producten, categorieën)
         source: "/tienda/:path*",
-        destination: "https://martinaalejandrag12.sg-host.com/:path*",
+        destination: "https://martinaalejandrag12.sg-host.com/tienda/:path*",
       },
       {
-        // 3. Vangt specifieke WooCommerce paden op zoals /producto/ of /carrito/
         source: "/producto/:path*",
         destination: "https://martinaalejandrag12.sg-host.com/producto/:path*",
       },
       {
-        source: "/carrito/:path*",
-        destination: "https://martinaalejandrag12.sg-host.com/carrito/:path*",
+        source: "/producto-categoria/:path*",
+        destination:
+          "https://martinaalejandrag12.sg-host.com/producto-categoria/:path*",
+      },
+      {
+        source: "/carrito",
+        destination: "https://martinaalejandrag12.sg-host.com/carrito/",
+      },
+      {
+        source: "/finalizar-compra",
+        destination:
+          "https://martinaalejandrag12.sg-host.com/finalizar-compra/",
       },
       {
         source: "/finalizar-compra/:path*",
         destination:
           "https://martinaalejandrag12.sg-host.com/finalizar-compra/:path*",
+      },
+      {
+        source: "/mi-cuenta",
+        destination: "https://martinaalejandrag12.sg-host.com/mi-cuenta/",
+      },
+      {
+        source: "/mi-cuenta/:path*",
+        destination: "https://martinaalejandrag12.sg-host.com/mi-cuenta/:path*",
+      },
+      {
+        source: "/wp-content/:path*",
+        destination:
+          "https://martinaalejandrag12.sg-host.com/wp-content/:path*",
+      },
+      {
+        source: "/wp-includes/:path*",
+        destination:
+          "https://martinaalejandrag12.sg-host.com/wp-includes/:path*",
+      },
+      {
+        source: "/wp-json/:path*",
+        destination: "https://martinaalejandrag12.sg-host.com/wp-json/:path*",
+      },
+      {
+        source: "/wp-admin/admin-ajax.php",
+        destination:
+          "https://martinaalejandrag12.sg-host.com/wp-admin/admin-ajax.php",
       },
     ];
   },
