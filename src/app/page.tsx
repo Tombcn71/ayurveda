@@ -372,7 +372,7 @@ export default function Home() {
                 <Button
                   variant="default"
                   size="lg"
-                  className="bg-[#009E4B] hover:bg-[#007a3a] text-white border-0 shadow-elevated"
+                  className="bg-[#8c986b] hover:bg-[#007a3a] text-white border-0 shadow-elevated"
                   onClick={() => {
                     const contactElement = document.getElementById("contact");
                     if (contactElement) {
@@ -1026,7 +1026,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-verde-salvia text-cream">
+      <footer className="bg-[#8c986b] text-cream">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div className="md:col-span-2">

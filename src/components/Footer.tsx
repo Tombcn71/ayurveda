@@ -22,7 +22,7 @@ const footerLinks = {
 
 export const Footer = () => {
   return (
-    <footer className="bg-verde-salvia text-cream">
+    <footer className="bg-[#8c986b] text-cream">
       <div className="container-width section-padding pb-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
@@ -36,8 +36,8 @@ export const Footer = () => {
               </span>
             </a>
             <p className="text-cream/70 leading-relaxed mb-6">
-              Tu centro de bienestar ayurvédico en Madrid.
-              Tratamientos personalizados para el equilibrio de cuerpo, mente y espíritu.
+              Tu centro de bienestar ayurvédico en Madrid. Tratamientos
+              personalizados para el equilibrio de cuerpo, mente y espíritu.
             </p>
           </div>
 
@@ -51,8 +51,7 @@ export const Footer = () => {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-cream/70 hover:text-gold transition-colors"
-                  >
+                    className="text-cream/70 hover:text-gold transition-colors">
                     {link.name}
                   </a>
                 </li>
@@ -70,8 +69,7 @@ export const Footer = () => {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-cream/70 hover:text-gold transition-colors"
-                  >
+                    className="text-cream/70 hover:text-gold transition-colors">
                     {link.name}
                   </a>
                 </li>
@@ -89,8 +87,7 @@ export const Footer = () => {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-cream/70 hover:text-gold transition-colors"
-                  >
+                    className="text-cream/70 hover:text-gold transition-colors">
                     {link.name}
                   </a>
                 </li>
@@ -102,10 +99,13 @@ export const Footer = () => {
         {/* Bottom */}
         <div className="pt-8 border-t border-cream/10 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-cream/60 text-sm">
-            © {new Date().getFullYear()} Ayurveda Salud. Todos los derechos reservados.
+            © {new Date().getFullYear()} Ayurveda Salud. Todos los derechos
+            reservados.
           </p>
           <p className="text-cream/60 text-sm flex items-center gap-1">
-            Hecho con <Heart className="w-4 h-4 text-terracotta fill-terracotta" /> para tu bienestar
+            Hecho con{" "}
+            <Heart className="w-4 h-4 text-terracotta fill-terracotta" /> para
+            tu bienestar
           </p>
         </div>
       </div>

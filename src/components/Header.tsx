@@ -5,10 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Leaf, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import CartIcon from "@/components/CartIcon"; // Zorg dat dit pad klopt
 
 const navItems = [
   { name: "Inicio", href: "/" },
-  { name: "Tienda", href: "/tienda" },
+  { name: "Tienda", href: "/tienda" }, // Aangepast naar /shop zoals in onze eerdere stappen
   {
     name: "Consultas",
     subItems: [
@@ -69,25 +70,22 @@ export const Header = () => {
           <Link
             href="/"
             className="flex items-center gap-1.5 sm:gap-2 group flex-shrink-0">
-            <div className="p-1.5 sm:p-2 rounded-xl transition-all duration-300 bg-verde-salvia">
+            <div className="p-1.5 sm:p-2 rounded-xl transition-all duration-300 bg-[#8c986b]">
               <Leaf className="w-5 h-5 sm:w-6 sm:h-6 transition-colors duration-300 text-white" />
             </div>
-            <span className="font-serif text-base sm:text-lg md:text-2xl font-bold transition-colors duration-300 text-verde-oscuro">
+            <span className="font-serif text-base sm:text-lg md:text-2xl font-bold transition-colors duration-300 text-[#8c986b]">
               Ayurveda
             </span>
           </Link>
 
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <div key={item.name} className="relative">
                 {item.subItems ? (
                   <div className="relative">
                     <button
-                      onClick={() =>
-                        setOpenDropdown(
-                          openDropdown === item.name ? null : item.name
-                        )
-                      }
+                      onMouseEnter={() => setOpenDropdown(item.name)} // Hover is vaak fijner op desktop
                       className="font-medium transition-all duration-300 hover:opacity-80 flex items-center gap-1 text-verde-oscuro">
                       {item.name}
                       <ChevronDown
@@ -95,7 +93,9 @@ export const Header = () => {
                       />
                     </button>
                     {openDropdown === item.name && (
-                      <div className="absolute top-full left-0 mt-2 bg-white rounded-xl shadow-xl py-2 min-w-[260px] border border-emerald-100 z-50">
+                      <div
+                        onMouseLeave={() => setOpenDropdown(null)}
+                        className="absolute top-full left-0 mt-2 bg-white rounded-xl shadow-xl py-2 min-w-[260px] border border-emerald-100 z-50">
                         {item.subItems.map((subItem) => (
                           <Link
                             key={subItem.name}
@@ -118,26 +118,35 @@ export const Header = () => {
                 )}
               </div>
             ))}
+
+            {/* Cart Icon Desktop */}
+            <CartIcon />
+
             <Button
               variant="default"
               size="sm"
-              className="bg-verde-salvia hover:bg-verde-salvia/90 text-white">
+              className="bg-[#8c986b] hover:bg-verde-salvia/90 text-white">
               Reservar Cita
             </Button>
           </div>
 
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2.5 rounded-lg transition-all duration-300 flex-shrink-0 border-2 text-verde-oscuro bg-white border-verde-salvia/20 hover:bg-verde-salvia hover:text-white"
-            aria-label="Toggle menu">
-            {isMobileMenuOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-6 h-6" />
-            )}
-          </button>
+          {/* Mobile Right Side */}
+          <div className="flex items-center gap-2 md:hidden">
+            <CartIcon /> {/* Altijd zichtbaar, ook op mobiel */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="p-2.5 rounded-lg transition-all duration-300 flex-shrink-0 border-2 text-verde-oscuro bg-white border-verde-salvia/20 hover:bg-verde-salvia hover:text-white"
+              aria-label="Toggle menu">
+              {isMobileMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
+            </button>
+          </div>
         </div>
 
+        {/* Mobile Menu (zoals je al had) */}
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
@@ -158,11 +167,11 @@ export const Header = () => {
                                 : item.name
                             )
                           }
-                          className="w-full text-left text-foreground font-semibold py-3 px-4 rounded-lg transition-all hover:bg-primary/5 hover:text-primary active:bg-primary/10 flex items-center justify-between group">
+                          className="w-full text-left text-foreground font-semibold py-3 px-4 rounded-lg transition-all hover:bg-primary/5 hover:text-primary flex items-center justify-between">
                           <span className="flex items-center gap-2">
                             {item.name}
                             <ChevronDown
-                              className={`w-4 h-4 transition-transform text-primary ${mobileOpenDropdown === item.name ? "rotate-180" : ""}`}
+                              className={`w-4 h-4 transition-transform ${mobileOpenDropdown === item.name ? "rotate-180" : ""}`}
                             />
                           </span>
                         </button>
@@ -177,11 +186,8 @@ export const Header = () => {
                                 <Link
                                   key={subItem.name}
                                   href={subItem.href}
-                                  onClick={() => {
-                                    setIsMobileMenuOpen(false);
-                                    setMobileOpenDropdown(null);
-                                  }}
-                                  className="block text-muted-foreground py-2 px-4 rounded-lg hover:bg-primary/5 hover:text-primary transition-all">
+                                  onClick={() => setIsMobileMenuOpen(false)}
+                                  className="block text-muted-foreground py-2 px-4 rounded-lg hover:bg-primary/5 hover:text-primary">
                                   {subItem.name}
                                 </Link>
                               ))}
@@ -193,13 +199,15 @@ export const Header = () => {
                       <Link
                         href={item.href || "#"}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className="text-foreground font-semibold py-3 px-4 rounded-lg transition-all hover:bg-primary/5 hover:text-primary active:bg-primary/10 block">
+                        className="text-foreground font-semibold py-3 px-4 rounded-lg transition-all hover:bg-primary/5 hover:text-primary block">
                         {item.name}
                       </Link>
                     )}
                   </div>
                 ))}
-                <Button variant="default" className="mt-2 w-full">
+                <Button
+                  variant="default"
+                  className="mt-2 w-full bg-[#8c986b] hover:bg-[#8c986b]/90">
                   Reservar Cita
                 </Button>
               </div>

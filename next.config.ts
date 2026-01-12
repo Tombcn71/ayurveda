@@ -1,82 +1,20 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  async redirects() {
-    return [
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    remotePatterns: [
       {
-        source: "/shop",
-        destination: "/tienda",
-        permanent: true,
+        protocol: "https",
+        hostname: "images.unsplash.com",
       },
       {
-        source: "/wp-admin/:path*",
-        destination: "https://martinaalejandrag12.sg-host.com/wp-admin/:path*",
-        permanent: false,
+        protocol: "https",
+        hostname: "ayurvedasalud.com",
       },
       {
-        source: "/wp-login.php",
-        destination: "https://martinaalejandrag12.sg-host.com/wp-login.php",
-        permanent: false,
+        protocol: "https",
+        hostname: "**.sg-host.com", // Voor het geval je nog de tijdelijke SiteGround URL gebruikt
       },
-    ];
-  },
-
-  async rewrites() {
-    return [
-      {
-        source: "/tienda",
-        destination: "https://martinaalejandrag12.sg-host.com/tienda/shop/",
-      },
-      {
-        source: "/tienda/:path*",
-        destination: "https://martinaalejandrag12.sg-host.com/shop/:path*",
-      },
-      {
-        source: "/producto/:path*",
-        destination: "https://martinaalejandrag12.sg-host.com/producto/:path*",
-      },
-      {
-        source: "/producto-categoria/:path*",
-        destination:
-          "https://martinaalejandrag12.sg-host.com/producto-categoria/:path*",
-      },
-      {
-        source: "/carrito",
-        destination: "https://martinaalejandrag12.sg-host.com/carrito/",
-      },
-      {
-        source: "/finalizar-compra",
-        destination:
-          "https://martinaalejandrag12.sg-host.com/finalizar-compra/",
-      },
-      {
-        source: "/finalizar-compra/:path*",
-        destination:
-          "https://martinaalejandrag12.sg-host.com/finalizar-compra/:path*",
-      },
-      {
-        source: "/mi-cuenta",
-        destination: "https://martinaalejandrag12.sg-host.com/mi-cuenta/",
-      },
-      {
-        source: "/mi-cuenta/:path*",
-        destination: "https://martinaalejandrag12.sg-host.com/mi-cuenta/:path*",
-      },
-      {
-        source: "/wp-content/:path*",
-        destination:
-          "https://martinaalejandrag12.sg-host.com/wp-content/:path*",
-      },
-      {
-        source: "/wp-includes/:path*",
-        destination:
-          "https://martinaalejandrag12.sg-host.com/wp-includes/:path*",
-      },
-      {
-        source: "/wp-json/:path*",
-        destination: "https://martinaalejandrag12.sg-host.com/wp-json/:path*",
-      },
-    ];
+    ],
   },
 };
 
