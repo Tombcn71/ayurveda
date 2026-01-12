@@ -1,12 +1,9 @@
-"use client"; // Alleen als je later interactieve elementen toevoegt, anders weglaten
-
-import api from "@/lib/woocommerce";
-import Link from "next/link";
-
-// Dit lost de Vercel build-fout op door de data-check tijdens build over te slaan
 export const dynamic = "force-dynamic";
 
-export default async function ShopPage() {
+import api from "@/lib/woocommerce"; // Check of dit pad klopt, anders aanpassen!
+import Link from "next/link";
+
+export default async function TiendaPage() {
   let products = [];
 
   try {
@@ -16,59 +13,46 @@ export default async function ShopPage() {
     });
     products = response.data || [];
   } catch (error) {
-    console.error("WooCommerce API Error:", error);
-    products = [];
+    console.error("Fout in Tienda:", error);
   }
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-32">
       <h1 className="text-4xl font-serif font-bold mb-10 text-center text-verde-oscuro">
-        Nuestros Productos
+        Nuestra Tienda
       </h1>
 
-      {products.length === 0 ? (
-        <div className="text-center py-20">
-          <p className="text-xl text-gray-500 font-serif">
-            No se han encontrado productos.
-          </p>
-        </div>
-      ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {products.map((product: any) => (
-            <div
-              key={product.id}
-              className="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-emerald-50">
-              <div className="aspect-square relative overflow-hidden bg-gray-50">
-                <img
-                  src={
-                    product.images?.[0]?.src ||
-                    "https://via.placeholder.com/400"
-                  }
-                  alt={product.name}
-                  loading="lazy"
-                  className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-
-              <div className="p-6 flex flex-col flex-grow text-center">
-                <h2 className="text-lg font-serif font-bold text-gray-800 mb-2 h-14 overflow-hidden leading-tight">
-                  {product.name}
-                </h2>
-                <p className="text-2xl font-bold mb-6 text-verde-salvia">
-                  €{parseFloat(product.price).toFixed(2)}
-                </p>
-
-                <Link
-                  href={`/product/${product.id}`}
-                  style={{ backgroundColor: "#8c986b" }}
-                  className="mt-auto block text-center text-white py-3 rounded-xl font-bold hover:brightness-110 transition-all shadow-md">
-                  Ver producto
-                </Link>
-              </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        {products.map((product: any) => (
+          <div
+            key={product.id}
+            className="flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm border border-emerald-50">
+            <div className="aspect-square relative overflow-hidden bg-gray-50">
+              <img
+                src={
+                  product.images?.[0]?.src || "https://via.placeholder.com/400"
+                }
+                alt={product.name}
+                className="object-cover w-full h-full"
+              />
             </div>
-          ))}
-        </div>
-      )}
+            <div className="p-6 flex flex-col flex-grow text-center">
+              <h2 className="text-lg font-serif font-bold text-gray-800 mb-2 h-14 overflow-hidden">
+                {product.name}
+              </h2>
+              <p className="text-2xl font-bold mb-6 text-verde-salvia">
+                €{parseFloat(product.price).toFixed(2)}
+              </p>
+              <Link
+                href={`/product/${product.id}`}
+                style={{ backgroundColor: "#8c986b" }}
+                className="mt-auto block text-center text-white py-3 rounded-xl font-bold">
+                Ver producto
+              </Link>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
