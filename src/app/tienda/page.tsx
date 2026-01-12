@@ -1,22 +1,23 @@
+"use client"; // Alleen als je later interactieve elementen toevoegt, anders weglaten
+
 import api from "@/lib/woocommerce";
 import Link from "next/link";
 
-// Dit zorgt ervoor dat de pagina 1 uur lang gecached wordt.
-// Hierdoor is de tienda direct zichtbaar voor bezoekers.
-export const revalidate = 3600;
+// Dit lost de Vercel build-fout op door de data-check tijdens build over te slaan
+export const dynamic = "force-dynamic";
 
 export default async function ShopPage() {
   let products = [];
 
   try {
-    // We halen de producten op. Next.js bewaart dit resultaat nu.
     const response = await api.get("products", {
       per_page: 50,
       status: "publish",
     });
-    products = response.data;
+    products = response.data || [];
   } catch (error) {
     console.error("WooCommerce API Error:", error);
+    products = [];
   }
 
   return (
@@ -28,7 +29,7 @@ export default async function ShopPage() {
       {products.length === 0 ? (
         <div className="text-center py-20">
           <p className="text-xl text-gray-500 font-serif">
-            Cargando productos...
+            No se han encontrado productos.
           </p>
         </div>
       ) : (
@@ -37,7 +38,6 @@ export default async function ShopPage() {
             <div
               key={product.id}
               className="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-emerald-50">
-              {/* Afbeelding met hover effect */}
               <div className="aspect-square relative overflow-hidden bg-gray-50">
                 <img
                   src={
@@ -50,7 +50,6 @@ export default async function ShopPage() {
                 />
               </div>
 
-              {/* Info */}
               <div className="p-6 flex flex-col flex-grow text-center">
                 <h2 className="text-lg font-serif font-bold text-gray-800 mb-2 h-14 overflow-hidden leading-tight">
                   {product.name}
@@ -59,7 +58,6 @@ export default async function ShopPage() {
                   €{parseFloat(product.price).toFixed(2)}
                 </p>
 
-                {/* Button naar product detail */}
                 <Link
                   href={`/product/${product.id}`}
                   style={{ backgroundColor: "#8c986b" }}
