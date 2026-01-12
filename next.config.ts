@@ -1,27 +1,30 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [
+  async rewrites() {
+    return [
       {
-        protocol: 'https',
-        hostname: 'cdn.sanity.io',
+        // De bezoeker gaat naar jouw-site.vercel.app/tienda
+        source: "/tienda",
+        destination: "https://martinaalejandrag12.sg-host.com/tienda/",
       },
       {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
+        source: "/tienda/:path*",
+        destination: "https://martinaalejandrag12.sg-host.com/:path*",
       },
       {
-        protocol: 'https',
-        hostname: 'images.pexels.com',
+        // Voor de afbeeldingen, CSS en JS van de nieuwe shop
+        source: "/wp-content/:path*",
+        destination:
+          "https://martinaalejandrag12.sg-host.com/wp-content/:path*",
       },
       {
-        protocol: 'https',
-        hostname: 'haritayurveda.com',
+        source: "/wp-includes/:path*",
+        destination:
+          "https://martinaalejandrag12.sg-host.com/wp-includes/:path*",
       },
-    ],
+    ];
   },
 };
 
 export default nextConfig;
-
