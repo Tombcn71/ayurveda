@@ -4,24 +4,28 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
-        // De bezoeker gaat naar jouw-site.vercel.app/tienda
+        // 1. De hoofdpagina van de winkel
         source: "/tienda",
         destination: "https://martinaalejandrag12.sg-host.com/tienda/",
       },
       {
+        // 2. Vangt alle subpagina's op (producten, categorieën)
         source: "/tienda/:path*",
         destination: "https://martinaalejandrag12.sg-host.com/:path*",
       },
       {
-        // Voor de afbeeldingen, CSS en JS van de nieuwe shop
-        source: "/wp-content/:path*",
-        destination:
-          "https://martinaalejandrag12.sg-host.com/wp-content/:path*",
+        // 3. Vangt specifieke WooCommerce paden op zoals /producto/ of /carrito/
+        source: "/producto/:path*",
+        destination: "https://martinaalejandrag12.sg-host.com/producto/:path*",
       },
       {
-        source: "/wp-includes/:path*",
+        source: "/carrito/:path*",
+        destination: "https://martinaalejandrag12.sg-host.com/carrito/:path*",
+      },
+      {
+        source: "/finalizar-compra/:path*",
         destination:
-          "https://martinaalejandrag12.sg-host.com/wp-includes/:path*",
+          "https://martinaalejandrag12.sg-host.com/finalizar-compra/:path*",
       },
     ];
   },
