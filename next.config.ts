@@ -1,15 +1,35 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/shop",
+        destination: "/tienda",
+        permanent: true,
+      },
+      {
+        source: "/wp-admin/:path*",
+        destination: "https://martinaalejandrag12.sg-host.com/wp-admin/:path*",
+        permanent: false,
+      },
+      {
+        source: "/wp-login.php",
+        destination: "https://martinaalejandrag12.sg-host.com/wp-login.php",
+        permanent: false,
+      },
+    ];
+  },
+
   async rewrites() {
     return [
       {
         source: "/tienda",
-        destination: "https://martinaalejandrag12.sg-host.com/tienda/",
+        destination: "https://martinaalejandrag12.sg-host.com/tienda/shop/",
       },
       {
         source: "/tienda/:path*",
-        destination: "https://martinaalejandrag12.sg-host.com/tienda/:path*",
+        destination: "https://martinaalejandrag12.sg-host.com/shop/:path*",
       },
       {
         source: "/producto/:path*",
@@ -55,11 +75,6 @@ const nextConfig: NextConfig = {
       {
         source: "/wp-json/:path*",
         destination: "https://martinaalejandrag12.sg-host.com/wp-json/:path*",
-      },
-      {
-        source: "/wp-admin/admin-ajax.php",
-        destination:
-          "https://martinaalejandrag12.sg-host.com/wp-admin/admin-ajax.php",
       },
     ];
   },
