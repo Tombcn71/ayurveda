@@ -8,44 +8,44 @@
   :root {
     /* Natural Ayurvedic Green Palette */
     --background: 45 30% 98%;
-    --foreground: 150 25% 15%;
+    --foreground: 76 25% 15%;
 
     --card: 45 35% 97%;
-    --card-foreground: 150 25% 15%;
+    --card-foreground: 76 25% 15%;
 
     --popover: 45 35% 97%;
-    --popover-foreground: 150 25% 15%;
+    --popover-foreground: 76 25% 15%;
 
-    /* Deep forest green */
-    --primary: 150 100% 31%;
+    /* Deep forest green - #8c986b */
+    --primary: 76 18% 48%;
     --primary-foreground: 45 35% 97%;
 
     /* Warm cream */
     --secondary: 38 45% 92%;
-    --secondary-foreground: 150 25% 20%;
+    --secondary-foreground: 76 25% 20%;
 
-    /* Soft sage */
-    --muted: 150 15% 92%;
-    --muted-foreground: 150 15% 40%;
+    /* Soft sage - #8c986b */
+    --muted: 76 10% 92%;
+    --muted-foreground: 76 10% 40%;
 
     /* Golden accent */
     --accent: 38 65% 55%;
-    --accent-foreground: 150 25% 15%;
+    --accent-foreground: 76 25% 15%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 150 15% 85%;
-    --input: 150 15% 85%;
-    --ring: 150 100% 31%;
+    --border: 76 15% 85%;
+    --input: 76 15% 85%;
+    --ring: 76 18% 48%;
 
     --radius: 0.75rem;
 
-    /* Custom Ayurveda tokens */
-    --sage: 150 100% 31%;
-    --sage-light: 150 30% 90%;
-    --sage-dark: 150 100% 20%;
-    --forest: 150 100% 31%;
+    /* Custom Ayurveda tokens - #8c986b */
+    --sage: 76 18% 48%;
+    --sage-light: 76 18% 90%;
+    --sage-dark: 76 18% 30%;
+    --forest: 76 18% 48%;
     --gold: 38 75% 50%;
     --gold-light: 38 80% 70%;
     --cream: 45 50% 96%;
@@ -58,17 +58,17 @@
     /* Gradients */
     --gradient-hero: linear-gradient(
       135deg,
-      hsl(150 100% 31% / 0.9),
-      hsl(150 80% 35% / 0.85)
+      hsl(76 18% 48% / 0.9),
+      hsl(76 18% 40% / 0.85)
     );
     --gradient-card: linear-gradient(180deg, hsl(45 35% 97%), hsl(45 30% 94%));
     --gradient-gold: linear-gradient(135deg, hsl(38 75% 50%), hsl(38 65% 60%));
 
     /* Shadows */
-    --shadow-soft: 0 4px 20px -2px hsl(150 25% 15% / 0.08);
-    --shadow-elevated: 0 12px 40px -8px hsl(150 25% 15% / 0.12);
+    --shadow-soft: 0 4px 20px -2px hsl(76 18% 15% / 0.08);
+    --shadow-elevated: 0 12px 40px -8px hsl(76 18% 15% / 0.12);
     --shadow-gold: 0 8px 30px -4px hsl(38 75% 50% / 0.25);
-    --shadow-card: 0 8px 24px -4px hsl(150 25% 15% / 0.1);
+    --shadow-card: 0 8px 24px -4px hsl(76 18% 15% / 0.1);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -81,37 +81,37 @@
   }
 
   .dark {
-    --background: 150 25% 8%;
+    --background: 76 18% 8%;
     --foreground: 45 30% 95%;
 
-    --card: 150 20% 12%;
+    --card: 76 15% 12%;
     --card-foreground: 45 30% 95%;
 
-    --popover: 150 20% 12%;
+    --popover: 76 15% 12%;
     --popover-foreground: 45 30% 95%;
 
-    --primary: 150 100% 31%;
-    --primary-foreground: 150 25% 8%;
+    --primary: 76 18% 48%;
+    --primary-foreground: 76 18% 8%;
 
-    --secondary: 150 15% 18%;
+    --secondary: 76 15% 18%;
     --secondary-foreground: 45 30% 95%;
 
-    --muted: 150 15% 18%;
-    --muted-foreground: 145 15% 60%;
+    --muted: 76 15% 18%;
+    --muted-foreground: 76 10% 60%;
 
     --accent: 38 60% 50%;
-    --accent-foreground: 150 25% 8%;
+    --accent-foreground: 76 18% 8%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 150 15% 20%;
-    --input: 150 15% 20%;
-    --ring: 150 100% 31%;
+    --border: 76 15% 20%;
+    --input: 76 15% 20%;
+    --ring: 76 18% 48%;
 
-    --sage: 150 100% 31%;
-    --sage-light: 150 15% 25%;
-    --forest: 150 100% 31%;
+    --sage: 76 18% 48%;
+    --sage-light: 76 10% 25%;
+    --forest: 76 18% 48%;
     --gold: 38 70% 45%;
     --gold-light: 38 50% 35%;
     --cream: 45 20% 12%;
