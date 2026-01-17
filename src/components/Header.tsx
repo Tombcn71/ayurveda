@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const navItems = [
   { name: "Inicio", href: "/" },
-  { name: "Tienda", href: "/tienda" }, // Aangepast naar /shop zoals in onze eerdere stappen
+  { name: "Tienda", href: "/tienda" },
   {
     name: "Consultas",
     subItems: [
@@ -46,7 +46,7 @@ export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [mobileOpenDropdown, setMobileOpenDropdown] = useState<string | null>(
-    null
+    null,
   );
 
   useEffect(() => {
@@ -84,8 +84,8 @@ export const Header = () => {
                 {item.subItems ? (
                   <div className="relative">
                     <button
-                      onMouseEnter={() => setOpenDropdown(item.name)} // Hover is vaak fijner op desktop
-                      className="font-medium transition-all duration-300 hover:opacity-80 flex items-center gap-1 text-verde-oscuro">
+                      onMouseEnter={() => setOpenDropdown(item.name)}
+                      className="font-medium transition-all duration-300 hover:opacity-80 flex items-center gap-1 text-black">
                       {item.name}
                       <ChevronDown
                         className={`w-4 h-4 transition-transform ${openDropdown === item.name ? "rotate-180" : ""}`}
@@ -100,7 +100,7 @@ export const Header = () => {
                             key={subItem.name}
                             href={subItem.href}
                             onClick={() => setOpenDropdown(null)}
-                            className="block px-4 py-3 text-foreground hover:bg-emerald-50 transition-colors">
+                            className="block px-4 py-3 text-black hover:bg-emerald-50 transition-colors">
                             {subItem.name}
                           </Link>
                         ))}
@@ -110,9 +110,9 @@ export const Header = () => {
                 ) : (
                   <Link
                     href={item.href || "#"}
-                    className="font-medium transition-all duration-300 hover:opacity-80 relative group text-verde-oscuro">
+                    className="font-medium transition-all duration-300 hover:opacity-80 relative group text-black">
                     {item.name}
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-verde-salvia transition-all duration-300 group-hover:w-full" />
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#8c986b] transition-all duration-300 group-hover:w-full" />
                   </Link>
                 )}
               </div>
@@ -130,7 +130,7 @@ export const Header = () => {
           <div className="flex items-center gap-2 md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2.5 rounded-lg transition-all duration-300 flex-shrink-0 border-2 text-verde-oscuro bg-white border-verde-salvia/20 hover:bg-verde-salvia hover:text-white"
+              className="p-2.5 rounded-lg transition-all duration-300 flex-shrink-0 border-2 text-black bg-white border-[#8c986b]/20 hover:bg-[#8c986b] hover:text-white"
               aria-label="Toggle menu">
               {isMobileMenuOpen ? (
                 <X className="w-6 h-6" />
@@ -141,7 +141,7 @@ export const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Menu (zoals je al had) */}
+        {/* Mobile Menu */}
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
@@ -159,10 +159,10 @@ export const Header = () => {
                             setMobileOpenDropdown(
                               mobileOpenDropdown === item.name
                                 ? null
-                                : item.name
+                                : item.name,
                             )
                           }
-                          className="w-full text-left text-foreground font-semibold py-3 px-4 rounded-lg transition-all hover:bg-primary/5 hover:text-primary flex items-center justify-between">
+                          className="w-full text-left text-black font-semibold py-3 px-4 rounded-lg transition-all hover:bg-primary/5 hover:text-[#8c986b] flex items-center justify-between">
                           <span className="flex items-center gap-2">
                             {item.name}
                             <ChevronDown
@@ -182,7 +182,7 @@ export const Header = () => {
                                   key={subItem.name}
                                   href={subItem.href}
                                   onClick={() => setIsMobileMenuOpen(false)}
-                                  className="block text-muted-foreground py-2 px-4 rounded-lg hover:bg-primary/5 hover:text-primary">
+                                  className="block text-gray-600 py-2 px-4 rounded-lg hover:bg-primary/5 hover:text-[#8c986b]">
                                   {subItem.name}
                                 </Link>
                               ))}
@@ -194,7 +194,7 @@ export const Header = () => {
                       <Link
                         href={item.href || "#"}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className="text-foreground font-semibold py-3 px-4 rounded-lg transition-all hover:bg-primary/5 hover:text-primary block">
+                        className="text-black font-semibold py-3 px-4 rounded-lg transition-all hover:bg-primary/5 hover:text-[#8c986b] block">
                         {item.name}
                       </Link>
                     )}
