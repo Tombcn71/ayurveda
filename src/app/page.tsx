@@ -62,7 +62,7 @@ const services = [
     features: [
       "Programa Detox",
       "Gestión del Estrés",
-      "Rasayana (rejuvenecimiento)",
+      "Meditación Trascendental",
     ],
     cta: "Ver Programas",
     color: "lilac" as const,
@@ -587,7 +587,7 @@ export default function Home() {
               Beneficios
             </span>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-6">
-              Lo que el Ayurveda puede hacer por ti
+              Qué es Ayurveda{" "}
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Beneficios comprobados que transforman tu vida día a día
