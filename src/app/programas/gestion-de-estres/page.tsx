@@ -154,7 +154,7 @@ export default function GestionDelEstresPage() {
                   afecciones cardiacas, asma, problemas de piel, obesidad.
                 </p>
 
-                <div className="bg-verde-salvia/10 border-l-4 border-verde-salvia p-6 rounded-r-lg my-8">
+                <div className="bg-[#8c986b]/10 border-l-4 border-[#8c986b] p-6 rounded-r-lg my-8">
                   <p className="text-gray-800 text-lg italic">
                     El{" "}
                     <strong>

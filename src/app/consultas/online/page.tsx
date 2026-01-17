@@ -334,7 +334,7 @@ export default function ConsultasOnlinePage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="text-center max-w-5xl mx-auto">
-              <h2 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-62">
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-4xl lg:text-5xl text-white mb-4 sm:mb-62">
                 Tarifas Consultas Online
               </h2>
 

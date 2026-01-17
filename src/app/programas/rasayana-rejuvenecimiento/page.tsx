@@ -170,7 +170,7 @@ export default function RasayanaRejuvenecimientoPage() {
                 <h2 className="font-serif text-4xl md:text-5xl text-gray-900 mb-6">
                   ¿Qué es Rasayana?
                 </h2>
-                <div className="inline-block bg-verde-salvia/10 border-l-4 border-verde-salvia px-8 py-4 rounded-r-xl mb-8">
+                <div className="inline-block bg-[#8c986b]/10 border-l-4 border-[#8c986b] px-8 py-4 rounded-r-xl mb-8">
                   <p className="text-2xl font-serif text-foreground italic">
                     "Rasayana es aquello que rejuvenece naturalmente"
                   </p>
@@ -197,15 +197,15 @@ export default function RasayanaRejuvenecimientoPage() {
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-6 my-8">
-                  <div className="bg-verde-salvia/10 rounded-xl p-6 text-center">
-                    <Leaf className="w-12 h-12 text-verde-salvia mx-auto mb-3" />
+                  <div className="bg-[#8c986b]/10 rounded-xl p-6 text-center">
+                    <Leaf className="w-12 h-12 text-[#8c986b] mx-auto mb-3" />
                     <h3 className="font-semibold text-foreground mb-2">
                       Aushadha Rasayana
                     </h3>
                     <p className="text-gray-700 text-sm">Plantas medicinales</p>
                   </div>
-                  <div className="bg-verde-salvia/10 rounded-xl p-6 text-center">
-                    <Heart className="w-12 h-12 text-verde-salvia mx-auto mb-3" />
+                  <div className="bg-[#8c986b]/10 rounded-xl p-6 text-center">
+                    <Heart className="w-12 h-12 text-[#8c986b] mx-auto mb-3" />
                     <h3 className="font-semibold text-foreground mb-2">
                       Ahara Rasayana
                     </h3>
@@ -213,8 +213,8 @@ export default function RasayanaRejuvenecimientoPage() {
                       Alimentación consciente
                     </p>
                   </div>
-                  <div className="bg-verde-salvia/10 rounded-xl p-6 text-center">
-                    <Sun className="w-12 h-12 text-verde-salvia mx-auto mb-3" />
+                  <div className="bg-[#8c986b]/10 rounded-xl p-6 text-center">
+                    <Sun className="w-12 h-12 text-[#8c986b] mx-auto mb-3" />
                     <h3 className="font-semibold text-foreground mb-2">
                       Vihara Rasayana
                     </h3>
@@ -267,7 +267,7 @@ export default function RasayanaRejuvenecimientoPage() {
 
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
-                      <span className="text-verde-salvia font-bold text-xl">
+                      <span className="text-[#8c986b] font-bold text-xl">
                         •
                       </span>
                       <span>
@@ -275,7 +275,7 @@ export default function RasayanaRejuvenecimientoPage() {
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-verde-salvia font-bold text-xl">
+                      <span className="text-[#8c986b] font-bold text-xl">
                         •
                       </span>
                       <span>
@@ -283,7 +283,7 @@ export default function RasayanaRejuvenecimientoPage() {
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-verde-salvia font-bold text-xl">
+                      <span className="text-[#8c986b] font-bold text-xl">
                         •
                       </span>
                       <span>
@@ -291,7 +291,7 @@ export default function RasayanaRejuvenecimientoPage() {
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-verde-salvia font-bold text-xl">
+                      <span className="text-[#8c986b] font-bold text-xl">
                         •
                       </span>
                       <span>
@@ -300,7 +300,7 @@ export default function RasayanaRejuvenecimientoPage() {
                     </li>
                   </ul>
 
-                  <div className="bg-verde-salvia/10 rounded-xl p-6 border-l-4 border-verde-salvia">
+                  <div className="bg-[#8c986b]/10 rounded-xl p-6 border-l-4 border-[#8c986b]">
                     <p className="font-semibold text-foreground">
                       Es la piedra angular perfecta para la prevención de la
                       salud física y mental, y vivir más años con más calidad de
@@ -399,9 +399,7 @@ export default function RasayanaRejuvenecimientoPage() {
                           <li
                             key={idx}
                             className="flex items-start gap-2 text-gray-700">
-                            <span className="text-verde-salvia font-bold">
-                              ✓
-                            </span>
+                            <span className="text-[#8c986b] font-bold">✓</span>
                             <span>{subItem}</span>
                           </li>
                         ))}
@@ -439,11 +437,11 @@ export default function RasayanaRejuvenecimientoPage() {
                   transition={{ delay: index * 0.1 }}>
                   <Card className="border-emerald-100 hover:border-emerald-300 hover:shadow-lg transition-all">
                     <CardContent className="p-6 text-center">
-                      <Calendar className="w-8 h-8 text-verde-salvia mx-auto mb-3" />
+                      <Calendar className="w-8 h-8 text-[#8c986b] mx-auto mb-3" />
                       <p className="font-semibold text-gray-900 mb-1 text-sm">
                         {workshop.date}
                       </p>
-                      <p className="text-verde-salvia font-bold text-xl">
+                      <p className="text-[#8c986b] font-bold text-xl">
                         {workshop.time}
                       </p>
                     </CardContent>

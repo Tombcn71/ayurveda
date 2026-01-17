@@ -197,7 +197,7 @@ export default function CursoMeditacionPage() {
                   de charlas avanzadas con meditación en grupo.
                 </p>
 
-                <div className="bg-verde-salvia/10 border-l-4 border-verde-salvia p-6 rounded-r-lg my-8">
+                <div className="bg-[#8c986b]/10 border-l-4 border-[#8c986b] p-6 rounded-r-lg my-8">
                   <p className="text-gray-800 text-lg">
                     Para obtener los múltiples beneficios de la meditación sólo
                     es necesario ser <strong>regular en la práctica</strong> en
@@ -221,9 +221,9 @@ export default function CursoMeditacionPage() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}>
-                    <Card className="border-verde-salvia/30 hover:border-verde-salvia hover:shadow-lg transition-all text-center">
+                    <Card className="border-[#8c986b]/30 hover:border-[#8c986b] hover:shadow-lg transition-all text-center">
                       <CardContent className="p-6">
-                        <benefit.icon className="w-12 h-12 text-verde-salvia mx-auto mb-3" />
+                        <benefit.icon className="w-12 h-12 text-[#8c986b] mx-auto mb-3" />
                         <p className="text-gray-800 font-medium">
                           {benefit.text}
                         </p>
@@ -259,14 +259,14 @@ export default function CursoMeditacionPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}>
-                  <Card className="h-full border-verde-salvia/30 hover:border-verde-salvia hover:shadow-xl transition-all">
+                  <Card className="h-full border-[#8c986b]/30 hover:border-[#8c986b] hover:shadow-xl transition-all">
                     <CardContent className="p-8">
                       <div className="flex items-center gap-3 mb-4">
                         <div className="w-12 h-12 bg-[#8c986b] rounded-xl flex items-center justify-center text-white font-bold text-xl">
                           {index + 1}
                         </div>
                         <div>
-                          <p className="text-sm text-verde-salvia font-semibold">
+                          <p className="text-sm text-[#8c986b] font-semibold">
                             {step.day}
                           </p>
                           <h3 className="font-serif text-xl text-gray-900">
@@ -292,8 +292,8 @@ export default function CursoMeditacionPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="mt-12 text-center">
-              <div className="bg-verde-salvia/10 rounded-3xl p-10 border-2 border-verde-salvia/30 max-w-3xl mx-auto">
-                <Users className="w-12 h-12 text-verde-salvia mx-auto mb-4" />
+              <div className="bg-[#8c986b]/10 rounded-3xl p-10 border-2 border-[#8c986b]/30 max-w-3xl mx-auto">
+                <Users className="w-12 h-12 text-[#8c986b] mx-auto mb-4" />
                 <p className="text-xl text-gray-800 leading-relaxed mb-2">
                   <strong>Grupos reducidos de 3 a 6 personas</strong>
                 </p>
@@ -331,15 +331,15 @@ export default function CursoMeditacionPage() {
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}>
                   <Card
-                    className={`h-full ${tier.featured ? "border-verde-salvia shadow-xl ring-2 ring-verde-salvia/50" : "border-verde-salvia/30"} hover:shadow-xl transition-all`}>
+                    className={`h-full ${tier.featured ? "border-[#8c986b] shadow-xl ring-2 ring-[#8c986b]/50" : "border-[#8c986b]/30"} hover:shadow-xl transition-all`}>
                     <CardContent className="p-8 text-center">
                       {tier.featured && (
-                        <div className="inline-block px-3 py-1 bg-verde-salvia/20 text-verde-salvia rounded-full text-xs font-semibold mb-4">
+                        <div className="inline-block px-3 py-1 bg-[#8c986b]/20 text-[#8c986b] rounded-full text-xs font-semibold mb-4">
                           Más común
                         </div>
                       )}
                       <p className="text-gray-600 mb-2">{tier.range}</p>
-                      <div className="text-5xl font-bold text-verde-salvia mb-2">
+                      <div className="text-5xl font-bold text-[#8c986b] mb-2">
                         {tier.price}
                       </div>
                       <p className="text-sm text-gray-600">
@@ -356,28 +356,28 @@ export default function CursoMeditacionPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="text-center">
-              <div className="bg-verde-salvia/10 rounded-3xl p-10 border-2 border-verde-salvia/30 max-w-4xl mx-auto">
+              <div className="bg-[#8c986b]/10 rounded-3xl p-10 border-2 border-[#8c986b]/30 max-w-4xl mx-auto">
                 <h3 className="font-serif text-2xl text-gray-900 mb-4">
                   Qué incluye la cuota
                 </h3>
                 <ul className="space-y-2 text-gray-700 text-lg">
                   <li className="flex items-center justify-center gap-2">
-                    <span className="text-verde-salvia">✓</span>
+                    <span className="text-[#8c986b]">✓</span>
                     <span>Instrucción personalizada</span>
                   </li>
                   <li className="flex items-center justify-center gap-2">
-                    <span className="text-verde-salvia">✓</span>
+                    <span className="text-[#8c986b]">✓</span>
                     <span>4 sesiones consecutivas</span>
                   </li>
                   <li className="flex items-center justify-center gap-2">
-                    <span className="text-verde-salvia">✓</span>
+                    <span className="text-[#8c986b]">✓</span>
                     <span>
                       <strong>6 meses de seguimiento</strong> con meditación en
                       grupo mensual
                     </span>
                   </li>
                   <li className="flex items-center justify-center gap-2">
-                    <span className="text-verde-salvia">✓</span>
+                    <span className="text-[#8c986b]">✓</span>
                     <span>Charla gratuita online preparatoria</span>
                   </li>
                 </ul>
