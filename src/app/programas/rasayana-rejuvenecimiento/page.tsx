@@ -87,6 +87,7 @@ export default function RasayanaRejuvenecimientoPage() {
 
   return (
     <>
+     
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
