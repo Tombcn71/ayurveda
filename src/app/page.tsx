@@ -488,7 +488,7 @@ export default function Home() {
             <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-primary bg-sage-light/60 rounded-full animate-fade-up">
               Tienda Online
             </span>
-            <h2 className="font-serif text-4xl md:text-5xl text-forest mb-6">
+            <h2 className="font-serif text-4xl md:text-5xl text-[#8c986b] mb-6">
               Nuestros productos ayurveda destacados
             </h2>
             <div className="w-16 h-1 bg-amber mx-auto mb-6" />
@@ -852,14 +852,14 @@ export default function Home() {
 
       {/* Contact Section */}
       <section id="contact" className="section-padding bg-card">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto ">
           <div className="relative overflow-hidden rounded-3xl p-8 md:p-12 mb-16 text-center bg-verde-salvia">
             <div className="absolute inset-0 opacity-10">
               <div className="absolute top-0 right-0 w-64 h-64 bg-lilac rounded-full blur-3xl" />
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-gold rounded-full blur-3xl" />
             </div>
 
-            <div className="relative z-10">
+            <div className="relative  z-10 ">
               <Calendar className="w-12 h-12 mx-auto mb-4 text-sage-light" />
               <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-medium text-cream mb-4">
                 ¿Listo para transformar tu bienestar?

@@ -238,7 +238,7 @@ export default function ConsultasOnlinePage() {
                   transition={{ delay: index * 0.1 }}>
                   <Card className="h-full border-emerald-100 hover:border-emerald-300 hover:shadow-xl transition-all">
                     <CardContent className="p-6">
-                      <div className="w-14 h-14 bg-verde-salvia rounded-2xl flex items-center justify-center mb-4">
+                      <div className="w-14 h-14 bg-[#8c986b] rounded-2xl flex items-center justify-center mb-4">
                         <item.icon className="w-7 h-7 text-white" />
                       </div>
                       <h3 className="font-semibold text-xl text-gray-900 mb-2">
@@ -318,7 +318,7 @@ export default function ConsultasOnlinePage() {
           </div>
         </section>
 
-        <section className="py-20 bg-verde-salvia relative">
+        <section className="py-20 bg-[#8c986b] relative">
           <div className="absolute inset-0 opacity-10">
             <Image
               src="https://images.unsplash.com/photo-1447452001602-7090c7ab2db3?w=1920&q=80"

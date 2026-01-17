@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Leaf, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import CartIcon from "@/components/CartIcon"; // Zorg dat dit pad klopt
 
 const navItems = [
   { name: "Inicio", href: "/" },
@@ -119,20 +118,16 @@ export const Header = () => {
               </div>
             ))}
 
-            {/* Cart Icon Desktop */}
-            <CartIcon />
-
             <Button
               variant="default"
               size="sm"
-              className="bg-[#8c986b] hover:bg-verde-salvia/90 text-white">
+              className="bg-[#8c986b] text-white">
               Reservar Cita
             </Button>
           </div>
 
           {/* Mobile Right Side */}
           <div className="flex items-center gap-2 md:hidden">
-            <CartIcon /> {/* Altijd zichtbaar, ook op mobiel */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="p-2.5 rounded-lg transition-all duration-300 flex-shrink-0 border-2 text-verde-oscuro bg-white border-verde-salvia/20 hover:bg-verde-salvia hover:text-white"

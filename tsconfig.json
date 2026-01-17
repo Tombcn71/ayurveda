@@ -28,7 +28,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "src/lib/woocommerce.js"
+    "src/lib/woocommerce.ts",
+    "src/lib/cart.ts"
   ],
   "exclude": ["node_modules"]
 }
